@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="headerTwo">
+                <div class="block__row">
+                    <div class="block logo">
+                        <img src="images/logo.png" alt="logo" class="logo">
+                    </div>
+                    <div class="block">
+                        +7 495 227 79 45 +7 915 480 12 22<br>
+                        Време работы: Пн-Вс 9:00–21:00<br>Местоположение: г. Москва, Нагорная улица д.3 с.2
+                        <div> <button class="SignUp">Записаться</button></div>
+                    </div>
+                    <div class="block" style="margin-left: 10px">
+                        <div class="text">
+                            <img class="message" src="images/telegram.png" alt="">
+                            <br>  <img class="message" src="images/WhatsApp.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="block"> <button class="signUp">Записаться</button></div>
+                </div>
+            </div>
+
+        </nav>
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="#home" class="active">Меню</a></li>
+                <li><a href="">О тех-центре</a></li>
+                <li><a href="">Прайс-лист</a></li>
+                <li><a href="">Корпоративным клиентам</a></li>
+                <li><a href="">Гарантия</a></li>
+                <li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="Menu()">&#9776;</a></li>
+            </ul>
+            <script>
+                function Menu() {
+                    let topnav = document.getElementById("myTopnav")
+                    if (topnav.className === "topnav") {
+                        topnav.className += " responsive";
+                    } else {
+                        topnav.className = "topnav";
+                    }
+                }
+            </script>
+        </nav>
+
+
+    </header>
+
+    <div class="container">
+        <div class="slider">
+            <div>
+                <div class="slider__item">
+                    <img src="/images/slider/1.jpg" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="slider__item">
+                    <img src="/images/slider/2.jpg" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="slider__item">
+                    <img src="/images/slider/3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <div class="service">Техническое обслуживание</div>
+        <div class="service">Диагностика</div>
+        <div class="service">Ремонт</div>
+        <div class="service">Электрика</div>
+        <div class="service">Шиномонтаж</div>
+        <div class="service">3D Сход-развал</div>
+        <div class="service">Дооснащение авто</div>
+        <div class="service">Автозвук и шумоизоляция</div>
+        <div class="service">1</div>
+        <div class="service">2</div>
+        <div class="service">3</div>
+        <div class="service">4</div>
+    </div>
+
+</body>
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="script.js"></script>
+
+</html>

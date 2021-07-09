@@ -1,0 +1,336 @@
+    /* Box sizing rules */
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    /* Remove default padding */
+    
+    ul[class],
+    ol[class] {
+        padding: 0;
+    }
+    /* Remove default margin */
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    ul[class],
+    ol[class],
+    li,
+    figure,
+    figcaption,
+    blockquote,
+    dl,
+    dd {
+        margin: 0;
+    }
+    /* Set core body defaults */
+    
+    body {
+        min-height: 100vh;
+        scroll-behavior: smooth;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+    }
+    /* Remove list styles on ul, ol elements with a class attribute */
+    
+    ul[class],
+    ol[class] {
+        list-style: none;
+    }
+    /* A elements that don't have a class get default styles */
+    
+    a:not([class]) {
+        text-decoration-skip-ink: auto;
+    }
+    /* Make images easier to work with */
+    
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    /* Natural flow and rhythm in articles by default */
+    
+    article>*+* {
+        margin-top: 1em;
+    }
+    /* Inherit fonts for inputs and buttons */
+    
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+    /* Remove all animations and transitions for people that prefer not to see them */
+    
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+    
+    html {
+        background-color: violet;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    ul.topnav li {
+        float: left;
+    }
+    
+    ul.topnav li a {
+        display: inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transform: 0.3s;
+        font-size: 100%;
+    }
+    
+    ul.topnav li a:hover {
+        background-color: #555;
+    }
+    
+    ul.topnav li.icon {
+        display: none;
+    }
+    
+    .logo img {
+        height: 100px;
+    }
+    
+    .block__row {
+        display: flex;
+        background-color: #081538;
+        color: white;
+    }
+    
+    .block {
+        margin: 20px;
+    }
+    
+    .text img {
+        display: inline;
+        position: relative;
+        top: 10px;
+        left: 5px;
+        height: 30px;
+        width: 30px;
+    }
+    
+    .signUp {
+        height: 40px;
+        width: 200px;
+        font-size: 16px;
+        background-color: green;
+        color: white;
+    }
+    
+    .SignUp {
+        height: 40px;
+        width: 200px;
+        font-size: 16px;
+        background-color: green;
+        color: white;
+        opacity: 0;
+    }
+    
+    @media screen and (max-width: 2560px) {
+        body {
+            margin: auto;
+            width: 70%;
+        }
+    }
+    
+    @media screen and (max-width: 1440px) {
+        ul.topnav li a {
+            font-size: 18px;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        body {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    
+    @media screen and (max-width: 956px) {
+        .signUp {
+            opacity: 0;
+        }
+        .SignUp {
+            opacity: 1;
+        }
+    }
+    
+    @media screen and (max-width: 680px) {
+        ul.topnav li:not(:first-child) {
+            display: none;
+        }
+        ul.topnav li.icon {
+            float: right;
+            display: inline-block;
+        }
+        .signUp {
+            opacity: 1;
+        }
+        .SignUp {
+            opacity: 0;
+            position: absolute;
+        }
+    }
+    
+    @media screen and (max-width: 680px) {
+        ul.topnav.responive {
+            position: relative;
+        }
+        ul.topnav.responive li.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        ul.topnav.responsive li {
+            float: none;
+            display: inline;
+        }
+        ul.topnav.responsive li a {
+            display: block;
+            text-align: center;
+        }
+        .logo {
+            display: none;
+        }
+        .block__row {
+            flex-direction: column;
+        }
+        .block {
+            margin: 10px;
+        }
+        .block button {
+            width: 100%;
+        }
+    }
+    /*/////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////
+                        Slider
+    /////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////*/
+    
+    @media screen and (max-width: 680px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+    
+    .slick-track {
+        display: flex;
+    }
+    
+    .slider {
+        min-width: 0;
+        margin: 2px;
+    }
+    
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+    }
+    
+    .next {
+        left: 95%;
+    }
+    
+    .prev {
+        right: 95%;
+    }
+    
+    .slider__item img {
+        width: 100%;
+    }
+    
+    @media screen and (max-width: 956px) {
+        .next {
+            left: 93%;
+        }
+        .prev {
+            right: 93%;
+        }
+    }
+    
+    @media screen and (max-width: 680px) {
+        .slider__item img {
+            height: auto;
+        }
+        .prev,
+        .next {
+            opacity: 0;
+        }
+        .slider {
+            margin: 0;
+        }
+    }
+    /*/////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////
+                        Servise
+    /////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////*/
+    
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    
+    .service {
+        background-image: url(/images/загружено.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 20em;
+        object-fit: cover;
+    }
+    
+    @media screen and (max-width: 1600px) {
+        .service {
+            height: 13em;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .services {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .service {
+            height: 10em;
+        }
+    }
+    
+    @media screen and (max-width: 425px) {
+        .services {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
