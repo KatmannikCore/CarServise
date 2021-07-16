@@ -5,3 +5,19 @@ $('.slider').slick({
     adaptiveHeight: false,
     autoplay: true,
 });
+let counter = true;
+document.querySelector(".Next").onclick = function() {
+    let pathImg = ['/carBrands/opel.png', '/carBrands/Peugeot.png', '/carBrands/porsche.png', '/carBrands/Reno.png', '/carBrands/seat.png', '/carBrands/skoda.png', '/carBrands/subaru.png', ];
+    let element = document.querySelector(".CarBrands");
+    if (counter) {
+        for (let item in pathImg) {
+            var div = document.createElement("div");
+            div.setAttribute("class", "car");
+            var img = document.createElement("IMG");
+            img.setAttribute('src', pathImg[item]);
+            div.appendChild(img);
+            element.appendChild(div)
+        }
+        counter = false;
+    }
+}

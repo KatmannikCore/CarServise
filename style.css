@@ -78,9 +78,7 @@
         }
     }
     
-    html {
-        background-color: violet;
-    }
+    html {}
     
     body {
         margin: 0;
@@ -157,10 +155,7 @@
     }
     
     @media screen and (max-width: 2560px) {
-        body {
-            margin: auto;
-            width: 70%;
-        }
+        body {}
     }
     
     @media screen and (max-width: 1440px) {
@@ -302,16 +297,64 @@
     .services {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        margin: 0 30px;
+        margin-top: 40px;
     }
     
     .service {
-        background-image: url(/images/загружено.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        height: 20em;
+        height: 12em;
         object-fit: cover;
+        border: 4px blue solid;
+        font-size: 20px;
+        color: orange;
+        width: 300px;
+        margin-top: 20px;
+    }
+    
+    .text {
+        margin-top: 20px;
+    }
+    
+    .service:nth-child(1) {
+        background-image: url("/images/services/ТО.jpg");
+    }
+    
+    .service:nth-child(3) {
+        background-image: url("/images/services/Шиномонтаж.jpg");
+    }
+    
+    .service:nth-child(5) {
+        background-image: url("/images/services/развал.jpg");
+    }
+    
+    .service:nth-child(7) {
+        background-image: url("/images/services/Диагностика.jpg");
+    }
+    
+    .service:nth-child(9) {
+        background-image: url("/images/services/Ремонт.jpg");
+    }
+    
+    .service:nth-child(11) {
+        background-image: url("/images/services/Автоэлектрик.jpg");
+    }
+    
+    .service:nth-child(13) {
+        background-image: url("/images/services/Автокондиционер.jpg");
+    }
+    
+    .service:nth-child(15) {
+        background-image: url("/images/services/Шумоизоляция.jpg");
+    }
+    
+    .service:nth-child(17) {
+        background-image: url("/images/services/Автозвук.jpeg");
+    }
+    
+    .service:nth-child(19) {
+        background-image: url("/images/services/Допооборудование.jpg");
     }
     
     @media screen and (max-width: 1600px) {
@@ -320,12 +363,18 @@
         }
     }
     
+    @media screen and (max-width: 770px) {
+        .services {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    
     @media screen and (max-width: 600px) {
         .services {
             grid-template-columns: 1fr 1fr 1fr;
         }
         .service {
-            height: 10em;
+            height: 5em;
         }
     }
     
@@ -333,4 +382,30 @@
         .services {
             grid-template-columns: 1fr 1fr;
         }
+    }
+    
+    .CarBrands {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .CarBrands img {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .car {
+        flex: 0 1 13%;
+    }
+    
+    .addCar {
+        background: brown;
+        height: 40px;
+        margin: auto;
+    }
+    
+    .addCar img {
+        width: 200px;
+        margin: auto;
     }
