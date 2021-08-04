@@ -1,510 +1,604 @@
-        /* Box sizing rules */
-        
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-        /* Remove default padding */
-        
-        ul[class],
-        ol[class] {
-            padding: 0;
-        }
-        /* Remove default margin */
-        
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        p,
-        ul[class],
-        ol[class],
-        li,
-        figure,
-        figcaption,
-        blockquote,
-        dl,
-        dd {
-            margin: 0;
-        }
-        /* Set core body defaults */
-        
-        body {
-            min-height: 100vh;
-            scroll-behavior: smooth;
-            text-rendering: optimizeSpeed;
-            line-height: 1.5;
-        }
-        /* Remove list styles on ul, ol elements with a class attribute */
-        
-        ul[class],
-        ol[class] {
-            list-style: none;
-        }
-        /* A elements that don't have a class get default styles */
-        
-        a:not([class]) {
-            text-decoration-skip-ink: auto;
-        }
-        /* Make images easier to work with */
-        
-        img {
-            max-width: 100%;
-            display: block;
-        }
-        /* Natural flow and rhythm in articles by default */
-        
-        article>*+* {
-            margin-top: 1em;
-        }
-        /* Inherit fonts for inputs and buttons */
-        
-        input,
-        button,
-        textarea,
-        select {
-            font: inherit;
-        }
-        /* Remove all animations and transitions for people that prefer not to see them */
-        
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-                scroll-behavior: auto !important;
-            }
-        }
-        
-        html {}
-        
-        body {
-            margin: 0;
-        }
-        
-        ul.topnav {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-        
-        ul.topnav li {
-            float: left;
-        }
-        
-        ul.topnav li a {
-            display: inline-block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            transform: 0.3s;
-            font-size: 100%;
-        }
-        
-        ul.topnav li a:hover {
-            background-color: #555;
-        }
-        
-        ul.topnav li.icon {
-            display: none;
-        }
-        
-        .logo img {
-            height: 100px;
-        }
-        
-        .block__row {
-            display: flex;
-            background-color: #081538;
-            color: white;
-        }
-        
-        .block {
-            margin: 20px;
-        }
-        
-        .text img {
-            display: inline;
-            position: relative;
-            top: 10px;
-            left: 5px;
-            height: 30px;
-            width: 30px;
-        }
-        
-        .signUp {
-            height: 40px;
-            width: 200px;
-            font-size: 16px;
-            background-color: green;
-            color: white;
-        }
-        
-        .SignUp {
-            height: 40px;
-            width: 200px;
-            font-size: 16px;
-            background-color: green;
-            color: white;
-            opacity: 0;
-        }
-        
-        @media screen and (max-width: 2560px) {
-            body {}
-        }
-        
-        @media screen and (max-width: 1440px) {
-            ul.topnav li a {
-                font-size: 18px;
-            }
-        }
-        
-        @media screen and (max-width: 1024px) {
-            body {
-                width: 100%;
-                margin: 0;
-            }
-        }
-        
-        @media screen and (max-width: 956px) {
-            .signUp {
-                opacity: 0;
-            }
-            .SignUp {
-                opacity: 1;
-            }
-        }
-        
-        @media screen and (max-width: 680px) {
-            ul.topnav li:not(:first-child) {
-                display: none;
-            }
-            ul.topnav li.icon {
-                float: right;
-                display: inline-block;
-            }
-            .signUp {
-                opacity: 1;
-            }
-            .SignUp {
-                opacity: 0;
-                position: absolute;
-            }
-        }
-        
-        @media screen and (max-width: 680px) {
-            ul.topnav.responive {
-                position: relative;
-            }
-            ul.topnav.responive li.icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-            ul.topnav.responsive li {
-                float: none;
-                display: inline;
-            }
-            ul.topnav.responsive li a {
-                display: block;
-                text-align: center;
-            }
-            .logo {
-                display: none;
-            }
-            .block__row {
-                flex-direction: column;
-            }
-            .block {
-                margin: 10px;
-            }
-            .block button {
-                width: 100%;
-            }
-        }
-        /*/////////////////////////////////////////////////////
+                            /* Box sizing rules */
+                            
+                            *,
+                            *::before,
+                            *::after {
+                                box-sizing: border-box;
+                            }
+                            /* Remove default padding */
+                            
+                            ul[class],
+                            ol[class] {
+                                padding: 0;
+                            }
+                            /* Remove default margin */
+                            
+                            body,
+                            h1,
+                            h2,
+                            h3,
+                            h4,
+                            p,
+                            ul[class],
+                            ol[class],
+                            li,
+                            figure,
+                            figcaption,
+                            blockquote,
+                            dl,
+                            dd {
+                                margin: 0;
+                            }
+                            /* Set core body defaults */
+                            
+                            body {
+                                min-height: 100vh;
+                                scroll-behavior: smooth;
+                                text-rendering: optimizeSpeed;
+                                line-height: 1.5;
+                            }
+                            /* Remove list styles on ul, ol elements with a class attribute */
+                            
+                            ul[class],
+                            ol[class] {
+                                list-style: none;
+                            }
+                            /* A elements that don't have a class get default styles */
+                            
+                            a:not([class]) {
+                                text-decoration-skip-ink: auto;
+                            }
+                            /* Make images easier to work with */
+                            
+                            img {
+                                max-width: 100%;
+                                display: block;
+                            }
+                            /* Natural flow and rhythm in articles by default */
+                            
+                            article>*+* {
+                                margin-top: 1em;
+                            }
+                            /* Inherit fonts for inputs and buttons */
+                            
+                            input,
+                            button,
+                            textarea,
+                            select {
+                                font: inherit;
+                            }
+                            /* Remove all animations and transitions for people that prefer not to see them */
+                            
+                            @media (prefers-reduced-motion: reduce) {
+                                * {
+                                    animation-duration: 0.01ms !important;
+                                    animation-iteration-count: 1 !important;
+                                    transition-duration: 0.01ms !important;
+                                    scroll-behavior: auto !important;
+                                }
+                            }
+                            
+                            html {}
+                            
+                            body {
+                                margin: 0;
+                                background-color: #333;
+                                font-family: 'Roboto', sans-serif;
+                            }
+                            
+                            ul.topnav {
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                                overflow: hidden;
+                                background-color: #333;
+                            }
+                            
+                            ul.topnav li {
+                                float: left;
+                            }
+                            
+                            ul.topnav li a {
+                                display: inline-block;
+                                color: #f2f2f2;
+                                text-align: center;
+                                padding: 14px 16px;
+                                text-decoration: none;
+                                transform: 0.3s;
+                                font-size: 100%;
+                            }
+                            
+                            ul.topnav li a:hover {
+                                background-color: #555;
+                            }
+                            
+                            ul.topnav li.icon {
+                                display: none;
+                            }
+                            
+                            .logo img {
+                                height: 100px;
+                            }
+                            
+                            .block__row {
+                                display: flex;
+                                background-color: #081538;
+                                color: #333;
+                                text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
+                            }
+                            
+                            .block {
+                                margin: 20px;
+                            }
+                            
+                            .text img {
+                                display: inline;
+                                position: relative;
+                                top: 10px;
+                                left: 5px;
+                                height: 30px;
+                                width: 30px;
+                            }
+                            
+                            .signUp {
+                                height: 40px;
+                                width: 200px;
+                                font-size: 16px;
+                                background-color: brown;
+                                color: white;
+                                border-radius: 20px;
+                                margin-top: 20px;
+                            }
+                            
+                            .SignUp {
+                                height: 40px;
+                                width: 200px;
+                                font-size: 16px;
+                                background-color: green;
+                                color: white;
+                                opacity: 0;
+                            }
+                            
+                            @media screen and (max-width: 2560px) {
+                                body {}
+                            }
+                            
+                            @media screen and (max-width: 1440px) {
+                                ul.topnav li a {
+                                    font-size: 18px;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 1024px) {
+                                body {
+                                    width: 100%;
+                                    margin: 0;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 956px) {
+                                .signUp {
+                                    opacity: 0;
+                                }
+                                .SignUp {
+                                    opacity: 1;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 680px) {
+                                ul.topnav li:not(:first-child) {
+                                    display: none;
+                                }
+                                ul.topnav li.icon {
+                                    float: right;
+                                    display: inline-block;
+                                }
+                                .signUp {
+                                    opacity: 1;
+                                }
+                                .SignUp {
+                                    opacity: 0;
+                                    position: absolute;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 680px) {
+                                ul.topnav.responive {
+                                    position: relative;
+                                }
+                                ul.topnav.responive li.icon {
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                                ul.topnav.responsive li {
+                                    float: none;
+                                    display: inline;
+                                }
+                                ul.topnav.responsive li a {
+                                    display: block;
+                                    text-align: center;
+                                }
+                                .logo {
+                                    display: none;
+                                }
+                                .block__row {
+                                    flex-direction: column;
+                                }
+                                .block {
+                                    margin: 10px;
+                                }
+                                .block button {
+                                    width: 100%;
+                                }
+                            }
+                            /*/////////////////////////////////////////////////////
     ///////////////////////////////////////////////////
                         Slider
     /////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////*/
-        
-        @media screen and (max-width: 680px) {
-            .container {
-                flex-direction: column;
-            }
-        }
-        
-        .slick-track {
-            display: flex;
-        }
-        
-        .slider {
-            min-width: 0;
-            margin: 2px;
-        }
-        
-        .prev,
-        .next {
-            position: absolute;
-            top: 50%;
-            z-index: 10;
-        }
-        
-        .next {
-            left: 95%;
-        }
-        
-        .prev {
-            right: 95%;
-        }
-        
-        .slider__item img {
-            width: 100%;
-        }
-        
-        @media screen and (max-width: 956px) {
-            .next {
-                left: 93%;
-            }
-            .prev {
-                right: 93%;
-            }
-        }
-        
-        @media screen and (max-width: 680px) {
-            .slider__item img {
-                height: auto;
-            }
-            .prev,
-            .next {
-                opacity: 0;
-            }
-            .slider {
-                margin: 0;
-            }
-        }
-        /*/////////////////////////////////////////////////////
+                            
+                            @media screen and (max-width: 680px) {
+                                .container {
+                                    flex-direction: column;
+                                }
+                            }
+                            
+                            .slick-track {
+                                display: flex;
+                            }
+                            
+                            .slider {
+                                min-width: 0;
+                                margin: 2px;
+                            }
+                            
+                            .prev,
+                            .next {
+                                position: absolute;
+                                top: 50%;
+                                z-index: 10;
+                            }
+                            
+                            .next {
+                                left: 95%;
+                            }
+                            
+                            .prev {
+                                right: 95%;
+                            }
+                            
+                            .slider__item img {
+                                width: 100%;
+                            }
+                            
+                            @media screen and (max-width: 956px) {
+                                .next {
+                                    left: 93%;
+                                }
+                                .prev {
+                                    right: 93%;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 680px) {
+                                .slider__item img {
+                                    height: auto;
+                                }
+                                .prev,
+                                .next {
+                                    opacity: 0;
+                                }
+                                .slider {
+                                    margin: 0;
+                                }
+                            }
+                            /*/////////////////////////////////////////////////////
     ///////////////////////////////////////////////////
                         Servise
     /////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////*/
-        
-        .services {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            margin: 0 30px;
-            margin-top: 40px;
-        }
-        
-        .service {
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            height: 12em;
-            object-fit: cover;
-            border: 4px blue solid;
-            font-size: 20px;
-            color: orange;
-            width: 300px;
-            margin-top: 20px;
-        }
-        
-        .text {
-            margin-top: 20px;
-        }
-        
-        .service:nth-child(1) {
-            background-image: url("/images/services/ТО.jpg");
-        }
-        
-        .service:nth-child(3) {
-            background-image: url("/images/services/Шиномонтаж.jpg");
-        }
-        
-        .service:nth-child(5) {
-            background-image: url("/images/services/развал.jpg");
-        }
-        
-        .service:nth-child(7) {
-            background-image: url("/images/services/Диагностика.jpg");
-        }
-        
-        .service:nth-child(9) {
-            background-image: url("/images/services/Ремонт.jpg");
-        }
-        
-        .service:nth-child(11) {
-            background-image: url("/images/services/Автоэлектрик.jpg");
-        }
-        
-        .service:nth-child(13) {
-            background-image: url("/images/services/Автокондиционер.jpg");
-        }
-        
-        .service:nth-child(15) {
-            background-image: url("/images/services/Шумоизоляция.jpg");
-        }
-        
-        .service:nth-child(17) {
-            background-image: url("/images/services/Автозвук.jpeg");
-        }
-        
-        .service:nth-child(19) {
-            background-image: url("/images/services/Допооборудование.jpg");
-        }
-        
-        @media screen and (max-width: 1600px) {
-            .service {
-                height: 13em;
-            }
-        }
-        
-        @media screen and (max-width: 770px) {
-            .services {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
-        
-        @media screen and (max-width: 600px) {
-            .services {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-            .service {
-                height: 5em;
-            }
-        }
-        
-        @media screen and (max-width: 425px) {
-            .services {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        
-        .CarBrands {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        
-        .CarBrands img {
-            height: 150px;
-            width: 150px;
-        }
-        
-        .car {
-            flex: 0 1 13%;
-        }
-        
-        .addCar {
-            background: brown;
-            height: 40px;
-            margin: auto;
-        }
-        
-        .addCar img {
-            width: 200px;
-            margin: auto;
-        }
-        
-        table {
-            table-layout: fixed;
-            width: 70%;
-            margin: auto;
-            border-collapse: collapse;
-            border: 1px solid gray;
-        }
-        
-        td {
-            border: 1px solid gray;
-            height: 82px;
-        }
-        
-        .NameServiceFirst {
-            background-color: rgba(55, 68, 80, 0.9);
-        }
-        
-        .NameServiceSecond {
-            background-color: #374450;
-        }
-        
-        table tbody th:nth-child(2) {
-            background-color: rgba(55, 68, 80, 0.6);
-        }
-        
-        table tbody th:nth-child(3) {
-            background-color: rgba(55, 68, 80, 0.8);
-        }
-        
-        table tbody th:nth-child(4) {
-            background-color: #374450;
-        }
-        
-        table tbody th:first-child {
-            background-color: #eb6441;
-        }
-        
-        table tbody th {
-            padding: 10px 5px;
-        }
-        
-        table {
-            color: #FFF;
-            text-align: center;
-            font-family: "Proxima Nova Light";
-        }
-        
-        .Recording {
-            cursor: pointer;
-            margin: auto;
-            background-color: #eb6441;
-            text-align: center;
-            padding: 15px 20px;
-            color: white;
-            white-space: nowrap;
-            border-radius: 25px;
-            margin: 20px;
-            font-size: 12px;
-        }
-        
-        .info {
-            color: black;
-            font-weight: 600;
-        }
-        
-        .whyus {
-            background-image: url("/images/whyus/whyus.jpg");
-            height: 700px;
-            opacity: 0.9;
-        }
-        
-        .cont .item {
-            border: 1px white solid;
-            padding: 20px;
-            width: 300px;
-            margin-top: 100px;
-            color: #FFF;
-        }
-        
-        .cont .item p {
-            padding-top: 4px;
-            font-size: 26px;
-        }
-        
-        .cont {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-column-gap: 100px;
-        }
-        
-        .cont .item img {
-            background-color: #eb6441;
-            padding: 15px 30px;
-            position: relative;
-            bottom: 70px;
-        }
+                            
+                            h3 {
+                                font-size: 28px;
+                                color: #4780a1;
+                            }
+                            
+                            .services {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                                margin: 0 20px;
+                                margin-bottom: 30px;
+                            }
+                            
+                            .services div {
+                                height: 200px;
+                                margin-bottom: 30px
+                            }
+                            
+                            .service {
+                                background-repeat: no-repeat;
+                                background-size: 100% 100%;
+                                height: 12em;
+                                object-fit: cover;
+                                /*border: 2px #eb6441 solid;*/
+                                font-size: 20px;
+                                color: #ffd800;
+                                width: 250px;
+                                margin-top: 40px;
+                                margin: 30px;
+                                box-sizing: border-box;
+                                border-radius: 10px;
+                                padding: 20px;
+                                box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+                                font-weight: 600;
+                            }
+                            
+                            .service p {
+                                text-shadow: 5px 5px 5px rgba(255, 255, 0, 0.3), 5px 5px 5px rgba(255, 255, 0, 0.4), 5px 5px 5px rgba(255, 255, 0, 0.3);
+                            }
+                            
+                            .infoo {
+                                background-repeat: no-repeat;
+                                background-size: 100% 100%;
+                                width: 250px;
+                                transform: translate(12%, 15%);
+                                animation-name: hide;
+                                padding: 30px;
+                                position: relative;
+                                border-radius: 10px;
+                                color: brown;
+                                font-weight: 900;
+                                font-size: 20px;
+                                box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+                                opacity: 0.9;
+                            }
+                            
+                            div .infoo p {
+                                text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
+                            }
+                            
+                            .service:hover {
+                                opacity: 0;
+                                transition-timing-function: ease-in-out;
+                                transition-duration: 1s;
+                            }
+                            
+                            .service {
+                                transform: translate(0%, -100%);
+                            }
+                            
+                            div :nth-child(1) .service {
+                                background-image: url("/images/services/ТО.jpg");
+                            }
+                            
+                            div :nth-child(1) .infoo {
+                                background-image: url("/images/services/ТО.jpg");
+                            }
+                            
+                            div :nth-child(2) .service {
+                                background-image: url("/images/services/Шиномонтаж.jpg");
+                            }
+                            
+                            div :nth-child(2) .infoo {
+                                background-image: url("/images/services/Шиномонтаж.jpg");
+                            }
+                            
+                            div :nth-child(3) .service {
+                                background-image: url("/images/services/развал.jpg");
+                            }
+                            
+                            div :nth-child(3) .infoo {
+                                background-image: url("/images/services/развал.jpg");
+                            }
+                            
+                            div :nth-child(4) .service {
+                                background-image: url("/images/services/Диагностика.jpg");
+                            }
+                            
+                            div :nth-child(4) .infoo {
+                                background-image: url("/images/services/Диагностика.jpg");
+                            }
+                            
+                            div :nth-child(5) .service {
+                                background-image: url("/images/services/Ремонт.jpg");
+                            }
+                            
+                            div :nth-child(5) .infoo {
+                                background-image: url("/images/services/Ремонт.jpg");
+                            }
+                            
+                            div :nth-child(6) .service {
+                                background-image: url("/images/services/Автоэлектрик.jpg");
+                            }
+                            
+                            div :nth-child(6) .infoo {
+                                background-image: url("/images/services/Автоэлектрик.jpg");
+                            }
+                            
+                            div :nth-child(7) .service {
+                                background-image: url("/images/services/Автокондиционер.jpg");
+                            }
+                            
+                            div :nth-child(7) .infoo {
+                                background-image: url("/images/services/Автокондиционер.jpg");
+                            }
+                            
+                            div :nth-child(8) .service {
+                                background-image: url("/images/services/Шумоизоляция.jpg");
+                            }
+                            
+                            div :nth-child(8) .infoo {
+                                background-image: url("/images/services/Шумоизоляция.jpg");
+                            }
+                            
+                            div :nth-child(9) .service {
+                                background-image: url("/images/services/Автозвук.jpeg");
+                            }
+                            
+                            div :nth-child(9) .infoo {
+                                background-image: url("/images/services/Автозвук.jpeg");
+                            }
+                            
+                            div :nth-child(10) .service {
+                                background-image: url("/images/services/Допооборудование.jpg");
+                            }
+                            
+                            div :nth-child(10) .infoo {
+                                background-image: url("/images/services/Допооборудование.jpg");
+                            }
+                            
+                            @media screen and (max-width: 1600px) {
+                                .service {
+                                    height: 13em;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 770px) {
+                                .services {
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 600px) {
+                                .services {
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                                .service {
+                                    height: 5em;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 425px) {
+                                .services {
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                            }
+                            
+                            .CarBrands {
+                                display: flex;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                            }
+                            
+                            .CarBrands img {
+                                height: 150px;
+                                width: 150px;
+                            }
+                            
+                            .car {
+                                flex: 0 1 13%;
+                                margin: 5px;
+                            }
+                            
+                            .addCar {
+                                background: brown;
+                                height: 40px;
+                                margin: 20px auto;
+                            }
+                            
+                            .addCar img {
+                                width: 200px;
+                                margin: auto;
+                            }
+                            
+                            table {
+                                table-layout: fixed;
+                                width: 70%;
+                                margin: auto;
+                                border-collapse: collapse;
+                                border: 1px solid gray;
+                            }
+                            
+                            td {
+                                border: 1px solid gray;
+                                height: 82px;
+                            }
+                            
+                            .NameServiceFirst {
+                                background-color: rgba(55, 68, 80, 0.9);
+                            }
+                            
+                            .NameServiceSecond {
+                                background-color: #374450;
+                            }
+                            
+                            table tbody th:nth-child(2) {
+                                background-color: rgba(55, 68, 80, 0.6);
+                            }
+                            
+                            table tbody th:nth-child(3) {
+                                background-color: rgba(55, 68, 80, 0.8);
+                            }
+                            
+                            table tbody th:nth-child(4) {
+                                background-color: #374450;
+                            }
+                            
+                            table tbody th:first-child {
+                                background-color: #eb6441;
+                            }
+                            
+                            table tbody th {
+                                padding: 10px 5px;
+                            }
+                            
+                            table {
+                                color: #FFF;
+                                text-align: center;
+                                font-family: "Proxima Nova Light";
+                                margin: 5px auto;
+                            }
+                            
+                            .Recording {
+                                cursor: pointer;
+                                margin: auto;
+                                background-color: #eb6441;
+                                text-align: center;
+                                padding: 15px 20px;
+                                color: white;
+                                white-space: nowrap;
+                                border-radius: 25px;
+                                margin: 20px;
+                                font-size: 12px;
+                            }
+                            
+                            .info {
+                                color: #e6bf00;
+                                font-weight: 500;
+                            }
+                            
+                            .whyus {
+                                background-image: url("/images/whyus/whyus.jpg");
+                                height: 700px;
+                                opacity: 0.9;
+                                margin: 10px 0;
+                            }
+                            
+                            .cont .item {
+                                border: 3px white solid;
+                                padding: 20px;
+                                width: 300px;
+                                margin-top: 100px;
+                                color: #e6bf00;
+                            }
+                            
+                            .cont .item p {
+                                padding-top: 4px;
+                                font-size: 26px;
+                            }
+                            
+                            .cont {
+                                max-width: 1000px;
+                                margin: 0 auto;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                grid-column-gap: 100px;
+                            }
+                            
+                            .cont .item img {
+                                background-color: #eb6441;
+                                padding: 15px 30px;
+                                position: relative;
+                                bottom: 70px;
+                            }
