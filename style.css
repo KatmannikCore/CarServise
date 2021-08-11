@@ -85,7 +85,7 @@
                     }
                     
                     header {
-                        background-image: url("/images/header.jpg");
+                        background-image: url("images/header.jpg");
                         background-size: 100%;
                         height: 700px;
                     }
@@ -95,14 +95,15 @@
                         margin: 0;
                         padding: 0;
                         overflow: hidden;
-                        float: right;
-                        width: 60%;
+                        
+                        width: 70%;
                         margin: 0 auto;
+                        padding-right: 0%;
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-left: 10%;
                     }
                     
-                    ul.topnav li {
-                        float: left;
-                    }
                     
                     ul.topnav li a {
                         display: inline-block;
@@ -137,7 +138,9 @@
                         font-size: 20px;
                         width: 70%;
                         margin: 0 auto;
-                        /* text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;*/
+                        justify-content: flex-end;
+                        margin-left: 10%;
+                        
                     }
                     
                     .block {
@@ -167,22 +170,16 @@
                         height: 40px;
                         width: 200px;
                         font-size: 16px;
-                        background-color: brown;
+                        background-color: rgba(0, 0, 0, 0.5);
                         color: white;
                         border-radius: 20px;
-                        margin-top: 20px;
-                        margin-left: 150px;
+                
                     }
-                    
-                    .SignUp {
-                        height: 40px;
-                        width: 200px;
-                        font-size: 16px;
-                        background-color: green;
-                        color: white;
-                        opacity: 0;
+                    .block p{
+                        text-align: center;
+                        font-size: 25px;
                     }
-                    
+                
                     @media screen and (max-width: 1440px) {
                         ul.topnav li a {
                             font-size: 18px;
@@ -196,15 +193,7 @@
                         }
                     }
                     
-                    @media screen and (max-width: 956px) {
-                        .signUp {
-                            opacity: 0;
-                        }
-                        .SignUp {
-                            opacity: 1;
-                        }
-                    }
-                    
+                   
                     @media screen and (max-width: 680px) {
                         ul.topnav li:not(:first-child) {
                             display: none;
@@ -213,13 +202,7 @@
                             float: right;
                             display: inline-block;
                         }
-                        .signUp {
-                            opacity: 1;
-                        }
-                        .SignUp {
-                            opacity: 0;
-                            position: absolute;
-                        }
+                       
                     }
                     
                     @media screen and (max-width: 680px) {
@@ -252,16 +235,7 @@
                             width: 100%;
                         }
                     }
-                    /*/ ////////////////////////////////////////////////////
-                                ///////////////////////////////////////////////////
-                                Slider /////////////////////////////////////////////////////////
-                                /////////////////////////////////////////////////////*/
-                    
-                    @media screen and (max-width: 680px) {
-                        .container {
-                            flex-direction: column;
-                        }
-                    }
+               
                     /*/////////////////////////////////////////////////////
                                 ///////////////////////////////////////////////////
                                                     Servise
