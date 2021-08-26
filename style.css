@@ -1,595 +1,310 @@
-                    /* Box sizing rules */
-                    
-                    *,
-                    *::before,
-                    *::after {
-                        box-sizing: border-box;
-                    }
-                    /* Remove default padding */
-                    
-                    ul[class],
-                    ol[class] {
-                        padding: 0;
-                    }
-                    /* Remove default margin */
-                    
-                    body,
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    p,
-                    ul[class],
-                    ol[class],
-                    li,
-                    figure,
-                    figcaption,
-                    blockquote,
-                    dl,
-                    dd {
-                        margin: 0;
-                    }
-                    /* Set core body defaults */
-                    
-                    body {
-                        min-height: 100vh;
-                        scroll-behavior: smooth;
-                        text-rendering: optimizeSpeed;
-                        line-height: 1.5;
-                    }
-                    /* Remove list styles on ul, ol elements with a class attribute */
-                    
-                    ul[class],
-                    ol[class] {
-                        list-style: none;
-                    }
-                    /* A elements that don't have a class get default styles */
-                    
-                    a:not([class]) {
-                        text-decoration-skip-ink: auto;
-                    }
-                    /* Make images easier to work with */
-                    
-                    img {
-                        max-width: 100%;
-                        display: block;
-                    }
-                    /* Natural flow and rhythm in articles by default */
-                    
-                    article>*+* {
-                        margin-top: 1em;
-                    }
-                    /* Inherit fonts for inputs and buttons */
-                    
-                    input,
-                    button,
-                    textarea,
-                    select {
-                        font: inherit;
-                    }
-                    /* Remove all animations and transitions for people that prefer not to see them */
-                    
-                    @media (prefers-reduced-motion: reduce) {
-                        * {
-                            animation-duration: 0.01ms !important;
-                            animation-iteration-count: 1 !important;
-                            transition-duration: 0.01ms !important;
-                            scroll-behavior: auto !important;
-                        }
-                    }
-                    
-                    body {
-                        margin: 0;
-                        background-color: #333;
-                        font-family: 'Roboto', sans-serif;
-                    }
-                    
-                    header {
-                        background-image: url("images/header/header.jpg");
-                        background-size: 100%;
-                        height: 700px;
-                    }
-                    
-                    ul.topnav {
-                        list-style-type: none;
-                        margin: 0;
-                        padding: 0;
-                        overflow: hidden;
-                        
-                        width: 70%;
-                        margin: 0 auto;
-                        padding-right: 0%;
-                        display: flex;
-                        justify-content: flex-end;
-                        margin-left: 10%;
-                    }
-                    
-                    
-                    ul.topnav li a {
-                        display: inline-block;
-                        color: #f2f2f2;
-                        font-weight: 900;
-                        text-align: center;
-                        padding: 14px 16px;
-                        text-decoration: none;
-                        transform: 0.3s;
-                        font-size: 20px;
-                    }
-                    
-                    ul.topnav li a:hover {
-                        text-decoration: underline;
-                    }
-                    
-                    ul.topnav li.icon {
-                        display: none;
-                    }
-                    
-                    .logo img {
-                        height: 100px;
-                        position: relative;
-                        margin-top: 25px;
-                    }
-                   
-                    .headerTwo {
-                        background-color: rgba(0, 0, 0, 0.6)
-                    }
-                    
-                    .block__row {
-                        display: flex;
-                        color: white;
-                        font-size: 20px;
-                        margin: 0 auto;
-                        height: 150px;
-                        font-family: Cambria, Georgia, serif;
-                        font-style: oblique;
-                        font-weight: 700;
-                        justify-content: center;
-                    }
-                    .message img{
-                        height: 40px;
-                    }
-                    .menu a{
-                        text-decoration: none;
-                        color: #ddd;
-                        font-size: 30px;
-                        margin: 30px;
-                        margin-bottom: 30px;
-                    }
-                    .description {
-                        display: flex;
-                    }
-                    .description p {
-                        margin-left: 40px;
-                        margin-top: 20px;
-                    }
-                    .description .Number{
-                        position: relative;
-                        top:-15px;
-                    }
-                    .message img{
-                        margin: 15px;
-                    }
-                    .message div{
-                        display: flex;
-                    }
-                    .message div p{
-                        margin-top: 20px;
-                    }
-                   
-                    .Order{
-                        background-color: rgba(252, 252, 252, 0.3);
-                        width:  250px;
-                        height: 350px;
-                        float: right;
-                        position: relative;
-                        top:100px;
-                        right: 200px;
-                        opacity: 0;
-                        
-                    }
-                    @media screen and (max-width: 1440px) {
-                        ul.topnav li a {
-                            font-size: 18px;
-                        }
-                    }
-                    
-                    @media screen and (max-width: 1024px) {
-                        body {
-                            width: 100%;
-                            margin: 0;
-                        }
-                    }
-                    
-                   
-                    @media screen and (max-width: 680px) {
-                        ul.topnav li:not(:first-child) {
-                            display: none;
-                        }
-                        ul.topnav li.icon {
-                            float: right;
-                            display: inline-block;
-                        }
-                       
-                    }
-                    
-                    @media screen and (max-width: 680px) {
-                        ul.topnav.responive {
-                            position: relative;
-                        }
-                        ul.topnav.responive li.icon {
-                            position: absolute;
-                            right: 0;
-                            top: 0;
-                        }
-                        ul.topnav.responsive li {
-                            float: none;
-                            display: inline;
-                        }
-                        ul.topnav.responsive li a {
-                            display: block;
-                            text-align: center;
-                        }
-                        .logo {
-                            display: none;
-                        }
-                        .block__row {
-                            flex-direction: column;
-                        }
-                        .block {
-                            margin: 10px;
-                        }
-                        .block button {
-                            width: 100%;
-                        }
-                    }
-               
-                    /*/////////////////////////////////////////////////////
-                                ///////////////////////////////////////////////////
-                                                    Servise
-                                 /////////////////////////////////////////////////////////
-                                 /////////////////////////////////////////////////////*/
-                    
-                    h3 {
-                        font-size: 28px;
-                        color: #4780a1;
-                    }
-                    
-                    .services {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                        margin: 0 20px;
-                        margin-bottom: 30px;
-                    }
-                    
-                    .services div {
-                        height: 300px;
-                        margin-bottom: 30px
-                    }
-                    
-                    .service {
-                        background-repeat: no-repeat;
-                        background-size: 100% 100%;
-                        object-fit: cover;
-                        margin-top: 0;
-                        color: #eb6441;
-                        max-width: 450px;
-                        margin: 30px;
-                        box-sizing: border-box;
-                        border-radius: 10px;
-                        padding: 20px;
-                        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
-                        font-weight: 600;
-                    }
-                    
-                    .service p {
-                        text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
-                        font-size: 40px;
-                        text-align: center;
-                        padding-top: 30px;
-                    }
-                    
-                    .infoo {
-                        background-repeat: no-repeat;
-                        background-size: 100% 100%;
-                        max-width: 450px;
-                        transform: translate(0, 10%);
-                        animation-name: hide;
-                        padding: 9px;
-                        margin: 30px;
-                        margin-top: 0;
-                        position: relative;
-                        border-radius: 10px;
-                        color: brown;
-                        font-weight: 900;
-                        font-size: 18px;
-                        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
-                        opacity: 0.9;
-                    }
-                    
-                    @media screen and (max-width: 2000px) {
-                        .services div {
-                            height: 200px;
-                            margin-bottom: 30px
-                        }
-                        .infoo {
-                            transform: translate(0%, 15%);
-                        }
-                        .service p {
-                            font-size: 25px;
-                        }
-                    }
-                    
-                    @media screen and (max-width: 1500px) {
-                        .services {
-                            grid-template-columns: 1fr 1fr 1fr 1fr;
-                        }
-                    }
-                    
-                    @media screen and (max-width: 1200px) {
-                        .services {
-                            grid-template-columns: 1fr 1fr 1fr;
-                        }
-                    }
-                    
-                    @media screen and (max-width: 940px) {
-                        .services {
-                            grid-template-columns: 1fr;
-                        }
-                    }
-                    
-                    div .infoo p {
-                        text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
-                    }
-                    
-                    div .infoo p span {
-                        color: #333;
-                    }
-                    
-                    .service:hover {
-                        opacity: 0;
-                        transition-timing-function: ease-in-out;
-                        transition-duration: 1s;
-                    }
-                    
-                    .service {
-                        transform: translate(0%, -100%);
-                    }
-                    
-                    div :nth-child(1) .service {
-                        background-image: url("/images/services/ТО.jpg");
-                    }
-                    
-                    div :nth-child(1) .infoo {
-                        background-image: url("/images/services/ТО.jpg");
-                    }
-                    
-                    div :nth-child(2) .service {
-                        background-image: url("/images/services/Шиномонтаж.jpg");
-                    }
-                    
-                    div :nth-child(2) .infoo {
-                        background-image: url("/images/services/Шиномонтаж.jpg");
-                    }
-                    
-                    div :nth-child(3) .service {
-                        background-image: url("/images/services/развал.jpg");
-                    }
-                    
-                    div :nth-child(3) .infoo {
-                        background-image: url("/images/services/развал.jpg");
-                    }
-                    
-                    div :nth-child(4) .service {
-                        background-image: url("/images/services/Диагностика.jpg");
-                    }
-                    
-                    div :nth-child(4) .infoo {
-                        background-image: url("/images/services/Диагностика.jpg");
-                    }
-                    
-                    div :nth-child(5) .service {
-                        background-image: url("/images/services/Ремонт.jpg");
-                    }
-                    
-                    div :nth-child(5) .infoo {
-                        background-image: url("/images/services/Ремонт.jpg");
-                    }
-                    
-                    div :nth-child(6) .service {
-                        background-image: url("/images/services/Автоэлектрик.jpg");
-                    }
-                    
-                    div :nth-child(6) .infoo {
-                        background-image: url("/images/services/Автоэлектрик.jpg");
-                    }
-                    
-                    div :nth-child(7) .service {
-                        background-image: url("/images/services/Автокондиционер.jpg");
-                    }
-                    
-                    div :nth-child(7) .infoo {
-                        background-image: url("/images/services/Автокондиционер.jpg");
-                    }
-                    
-                    div :nth-child(8) .service {
-                        background-image: url("/images/services/Шумоизоляция.jpg");
-                    }
-                    
-                    div :nth-child(8) .infoo {
-                        background-image: url("/images/services/Шумоизоляция.jpg");
-                    }
-                    
-                    div :nth-child(9) .service {
-                        background-image: url("/images/services/Автозвук.jpeg");
-                    }
-                    
-                    div :nth-child(9) .infoo {
-                        background-image: url("/images/services/Автозвук.jpeg");
-                    }
-                    
-                    div :nth-child(10) .service {
-                        background-image: url("/images/services/Допооборудование.jpg");
-                    }
-                    
-                    div :nth-child(10) .infoo {
-                        background-image: url("/images/services/Допооборудование.jpg");
-                    }
-                    
-                    .CarBrands {
-                        display: flex;
-                        justify-content: space-between;
-                        flex-wrap: wrap;
-                    }
-                    
-                    .CarBrands img {
-                        height: 150px;
-                        width: 150px;
-                    }
-                    
-                    .car {
-                        flex: 0 1 13%;
-                        margin: 5px;
-                    }
-                    
-                    .addCar {
-                        background: brown;
-                        height: 40px;
-                        margin: 20px auto;
-                    }
-                    
-                    .addCar img {
-                        width: 200px;
-                        margin: auto;
-                    }
-                    
-                    table {
-                        table-layout: fixed;
-                        width: 50%;
-                        margin: auto;
-                        border-collapse: collapse;
-                        border: 1px solid gray;
-                    }
-                    
-                    @media screen and (max-width: 2000px) {
-                        table {
-                            width: 70%;
-                        }
-                    }
-                    
-                    td {
-                        border: 1px solid gray;
-                        height: 82px;
-                    }
-                    
-                    .NameServiceFirst {
-                        background-color: rgba(55, 68, 80, 0.9);
-                    }
-                    
-                    .NameServiceSecond {
-                        background-color: #374450;
-                    }
-                    
-                    table tbody th:nth-child(2) {
-                        background-color: rgba(55, 68, 80, 0.6);
-                    }
-                    
-                    table tbody th:nth-child(3) {
-                        background-color: rgba(55, 68, 80, 0.8);
-                    }
-                    
-                    table tbody th:nth-child(4) {
-                        background-color: #374450;
-                    }
-                    
-                    table tbody th:first-child {
-                        background-color: #eb6441;
-                    }
-                    
-                    table tbody th {
-                        padding: 10px 5px;
-                    }
-                    
-                    table {
-                        color: #FFF;
-                        text-align: center;
-                        font-family: "Proxima Nova Light";
-                        margin: 5px auto;
-                    }
-                    
-                    .Recording {
-                        cursor: pointer;
-                        margin: auto;
-                        background-color: #eb6441;
-                        text-align: center;
-                        padding: 15px 20px;
-                        color: white;
-                        white-space: nowrap;
-                        border-radius: 25px;
-                        margin: 20px;
-                        font-size: 12px;
-                    }
-                    
-                    .info {
-                        color: #eb6441;
-                        font-weight: 500;
-                    }
-                    
-                    .whyus {
-                        background-image: url("/images/whyus/whyus.jpg");
-                        height: 700px;
-                        opacity: 0.9;
-                        margin: 10px 0;
-                    }
-                    
-                    .cont .item {
-                        border: 3px white solid;
-                        padding: 20px;
-                        max-width: 300px;
-                        margin-top: 100px;
-                        color: #333;
-                        text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
-                    }
-                    
-                    .cont .item p {
-                        padding-top: 4px;
-                        font-size: 26px;
-                    }
-                    
-                    .cont {
-                        max-width: 1000px;
-                        margin: 0 auto;
-                        display: grid;
-                        grid-template-columns: 1fr 1fr 1fr;
-                        grid-column-gap: 100px;
-                    }
-                    
-                    @media screen and (max-width: 1200px) {
-                        .cont {
-                            grid-template-columns: 1fr 1fr;
-                            grid-column-gap: 50px;
-                        }
-                    }
-                    
-                    @media screen and (max-width: 640px) {
-                        .cont {
-                            grid-template-columns: 1fr;
-                            grid-column-gap: 50px;
-                            margin-left: 100px;
-                        }
-                        .whyus {
-                            background-image: url("/images/whyus/whyus2.jpg");
-                            background-size: 100% auto;
-                            height: 2000px;
-                        }
-                        .cont .item {
-                            margin-top: 80px;
-                            padding: 20px;
-                        }
-                    }
-                    
-                    .cont .item img {
-                        background-color: #eb6441;
-                        padding: 15px 30px;
-                        position: relative;
-                        bottom: 70px;
-                    }
+                                    /* Box sizing rules */
+                                    
+                                    *,
+                                    *::before,
+                                    *::after {
+                                        box-sizing: border-box;
+                                    }
+                                    /* Remove default padding */
+                                    
+                                    ul[class],
+                                    ol[class] {
+                                        padding: 0;
+                                    }
+                                    /* Remove default margin */
+                                    
+                                    body,
+                                    h1,
+                                    h2,
+                                    h3,
+                                    h4,
+                                    p,
+                                    ul[class],
+                                    ol[class],
+                                    li,
+                                    figure,
+                                    figcaption,
+                                    blockquote,
+                                    dl,
+                                    dd {
+                                        margin: 0;
+                                    }
+                                    /* Set core body defaults */
+                                    
+                                    body {
+                                        min-height: 100vh;
+                                        scroll-behavior: smooth;
+                                        text-rendering: optimizeSpeed;
+                                        line-height: 1.5;
+                                    }
+                                    /* Remove list styles on ul, ol elements with a class attribute */
+                                    
+                                    ul[class],
+                                    ol[class] {
+                                        list-style: none;
+                                    }
+                                    /* A elements that don't have a class get default styles */
+                                    
+                                    a:not([class]) {
+                                        text-decoration-skip-ink: auto;
+                                    }
+                                    /* Make images easier to work with */
+                                    
+                                    img {
+                                        max-width: 100%;
+                                        display: block;
+                                    }
+                                    /* Natural flow and rhythm in articles by default */
+                                    
+                                    article>*+* {
+                                        margin-top: 1em;
+                                    }
+                                    /* Inherit fonts for inputs and buttons */
+                                    
+                                    input,
+                                    button,
+                                    textarea,
+                                    select {
+                                        font: inherit;
+                                    }
+                                    /* Remove all animations and transitions for people that prefer not to see them */
+                                    
+                                    @media (prefers-reduced-motion: reduce) {
+                                        * {
+                                            animation-duration: 0.01ms !important;
+                                            animation-iteration-count: 1 !important;
+                                            transition-duration: 0.01ms !important;
+                                            scroll-behavior: auto !important;
+                                        }
+                                    }
+                                    
+                                    body {
+                                        font-family: "Montserrat", Sans-serif;
+                                        background: black;
+                                    }
+                                    /*/////////////////
+                                ///////header//////
+                                /////////////////*/
+                                    
+                                    header {
+                                        background-color: black;
+                                        font-family: "Montserrat", Sans-serif;
+                                        border-bottom: #f18800 2px solid;
+                                    }
+                                    
+                                    header .First {
+                                        height: 80px;
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                    
+                                    header .First a {
+                                        color: white;
+                                        text-decoration: none;
+                                        font-size: 18px;
+                                        display: block;
+                                        height: 30px;
+                                        padding-left: 10px;
+                                        padding-right: 10px;
+                                        font-weight: 400;
+                                    }
+                                    
+                                    header .First a:hover {
+                                        color: #f18800;
+                                        border-bottom: #f18800 2px solid;
+                                    }
+                                    
+                                    header .Second {
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                    
+                                    header .Second img {
+                                        height: 80px;
+                                        padding-right: 20px;
+                                    }
+                                    
+                                    header .Second .button {
+                                        background-color: #f18800;
+                                        padding: 5px 0px;
+                                        color: white;
+                                        font-weight: 100;
+                                        font-size: 18px;
+                                        border-radius: 3px;
+                                        text-align: center;
+                                        width: 150px;
+                                        float: right;
+                                    }
+                                    
+                                    .AllHeader {
+                                        display: flex;
+                                        max-width: 80%;
+                                        margin: 0 auto;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                    }
+                                    /*/////////////////
+                                ///////start///////
+                                /////////////////*/
+                                    
+                                    .start {
+                                        height: 800px;
+                                        background-image: url("images/body/automobile.jpg");
+                                        background-size: 100% 100%;
+                                    }
+                                    
+                                    .start h1 {
+                                        max-width: 80%;
+                                        margin: 0 auto;
+                                        color: white;
+                                        font-weight: 100;
+                                        font-size: 70px;
+                                        line-height: 100px;
+                                        position: relative;
+                                        top: 10%;
+                                    }
+                                    /*/////////////////
+                                ///////slider//////
+                                /////////////////*/
+                                    
+                                    .slick-list {
+                                        overflow: hidden;
+                                    }
+                                    
+                                    .slick-track {
+                                        display: flex;
+                                        height: 400px;
+                                    }
+                                    
+                                    .slick-arrow {
+                                        position: absolute;
+                                        opacity: 0;
+                                    }
+                                    
+                                    .slider {
+                                        max-width: 80%;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    .slick-slide {
+                                        padding: 50px;
+                                    }
+                                    
+                                    .sliderHead {
+                                        background-color: #151515;
+                                    }
+                                    /*/////////////////
+                                //////servises/////
+                                /////////////////*/
+                                    
+                                    .services {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        max-width: 80%;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    .service {
+                                        width: 16%;
+                                        border: gray 1px solid;
+                                        margin: 2%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        height: 90%;
+                                    }
+                                    
+                                    .service p {
+                                        font-size: 20px;
+                                        color: white;
+                                        text-align: center;
+                                        padding: 10px;
+                                        margin-top: 10px;
+                                        flex: 1 1 auto;
+                                    }
+                                    
+                                    .service:hover {
+                                        transform: rotateX(180deg);
+                                        transition-duration: 1s;
+                                        /*backface-visibility: hidden;*/
+                                        background-color: red;
+                                        z-index: -20;
+                                    }
+                                    
+                                    .service .arrow {
+                                        height: 20px;
+                                        padding-right: 10px;
+                                        position: relative;
+                                        bottom: 10%;
+                                    }
+                                    
+                                    .service .button {
+                                        align-items: center;
+                                        font-size: 12px;
+                                        letter-spacing: .05em;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                        padding: 12px 20px;
+                                        font-family: 'Montserrat', sans-serif;
+                                        background: black;
+                                        color: white;
+                                        border: 1px solid;
+                                        cursor: pointer;
+                                        transition: .3s linear;
+                                        border-radius: 3px;
+                                        display: flex;
+                                        position: relative;
+                                        width: 60%;
+                                        align-self: baseline;
+                                        margin-bottom: 30px;
+                                        margin-top: 30px;
+                                        left: 10%;
+                                    }
+                                    
+                                    .service .button:hover {
+                                        color: black;
+                                        background: white;
+                                    }
+                                    
+                                    .first:hover {
+                                        z-index: 3;
+                                    }
+                                    
+                                    .ret {
+                                        background-color: red;
+                                        height: 100px;
+                                        position: relative;
+                                        bottom: 300px;
+                                        z-index: 2;
+                                    }
+                                    
+                                    footer {
+                                        color: white;
+                                        display: flex;
+                                        max-width: 80%;
+                                        margin: 0 auto;
+                                        font-size: 20px;
+                                    }
+                                    
+                                    footer div {
+                                        margin: 30px;
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    
+                                    footer div .head {
+                                        font-size: 30px;
+                                        margin-bottom: 30px;
+                                    }
+                                    
+                                    footer p:before {
+                                        content: "";
+                                        background-image: url(images/footer/menu_icon.png);
+                                        width: 30px;
+                                        height: 30px;
+                                        display: inline-block;
+                                        background-repeat: no-repeat;
+                                        position: absolute;
+                                        margin-top: 8px;
+                                        margin-left: -25px;
+                                        margin-right: 0px !important;
+                                    }

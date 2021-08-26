@@ -5,383 +5,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="libs/slick/slick.css">
-    <link rel="stylesheet" href="libs/slick/slick-theme.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Document</title>
 </head>
 
 
 <body>
     <header>
-        <nav>
-            <div class="headerTwo">
-                <div class="block__row">
-                    <div class="block logo">
-                        <img src="images/logo.png" alt="logo" class="logo">
-                    </div>
-                    <div>
-                        <div class="description">
-                            <p> Време работы: Пн-Вс 9:00–21:00 </p>  <p>Местоположение: г. Москва, Нагорная улица д.3 с.2</p>    <p class="Number" >+7 915 480 12 22 <br>  +7 495 227 79 45</p>  
-                        </div>
-                        <div class="menu">
-                            <a href="">О тех-центре</a>
-                            <a href="">Прайс-лист</a>
-                            <a href="">Корпоративным клиентам</a>
-                            <a href="">Гарантия</a>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div> <img src="/images/header/telegram .png" alt=""> <p>Telegram</p>  </div> 
-                        <div> <img src="/images/header/whatsapp.png" alt=""> <p>WhatsApp</p> </div> 
-                    </div>
+        <nav class="AllHeader">
+            <nav class="First">
+                <a href="">Меню</a>
+                <a href="">Контакты</a>
+                <a href="">Услуги</a>
+                <a href="">Блог</a>
+                <a href="">Галерея</a>
+                <a href="">Контакты</a>
+            </nav>
+            <nav class="Second">
+                <img src="images/header/logoDemo.png" alt="">
+                <div class="button">
+                    Записаться
                 </div>
-            </div>
+            </nav>
         </nav>
-        <nav>
-            <div class="Order">
-                Запишитесь сейчас
-                <input type="text" style="margin:20px">
-                <input type="text" style="margin:20px">
-                <input type="text" style="margin:20px">
-                <button style="width: 200px; height: 30px; margin-left: 20px; "  > Записаться </button>
-            </div>
-        </nav>
-        <nav>
-            <ul class="topnav" id="myTopnav" style="opacity: 0;">
-                <li><a href="#home" class="active">Меню</a></li>
-                <li><a href="">О тех-центре</a></li>
-                <li><a href="">Прайс-лист</a></li>
-                <li><a href="">Корпоративным клиентам</a></li>
-                <li><a href="">Гарантия</a></li>
-                <li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="Menu()">&#9776;</a></li>
-            </ul>
-            <script>
-                function Menu() {
-                    let topnav = document.getElementById("myTopnav")
-                    if (topnav.className === "topnav") {
-                        topnav.className += " responsive";
-                    } else {
-                        topnav.className = "topnav";
-                    }
-                }
-            </script>
-        </nav>
-
-
     </header>
-
-
+    <div class="start">
+        <h1>THE NUMBER <br> ONE CHOICE IN <br> PRESTIGE BRAND <br> SMART REPAIRS</h1>
+    </div>
+    <nav class="sliderHead">
+        <div class="slider">
+            <img src="images/slider/audi.png" alt="">
+            <img src="images/slider/bentley.png" alt="">
+            <img src="images/slider/land-rover.png" alt="">
+            <img src="images/slider/mercedes.png" alt="">
+            <img src="images/slider/porsche.png" alt="">
+            <img src="images/slider/bmw.png" alt="">
+            <img src="images/slider/volkswagen.png" alt="">
+            <img src="images/slider/aston.png" alt="">
+            <img src="images/slider/mazda.png" alt="">
+            <img src="images/slider/opel.png" alt="">
+            <img src="images/slider/chevrolet.png" alt="">
+            <img src="images/slider/honda.png" alt="">
+        </div>
+    </nav>
     <div class="services">
-        <div>
-            <div class="infoo">
-                <p>
-                    <span> 1. </span> Замена масла <br> <span> 2. </span>Замена фильтров <br> <span> 3. </span>Сброс сервисных интервалов
-                </p>
+        <div class="service">
+            <div class="first">
+                <img class="serv" src="images/services/car_audio.jpeg" alt="">
+                <p class="info">Автозвук от 600₽</p>
+                <button class="button"><img class="arrow" src="/images/services/str.png"/> Записаться</button>
             </div>
-            <div class="service one">
-                <p>
-                    Техническое обслуживание <br> от 600₽
-                </p>
-            </div>
+
+            <div class="ret"></div>
         </div>
-        <div>
-            <div class="infoo">
-                <p>
-                    <span> 1. </span>Замена резины <br> <span> 2. </span> Балансировка<br> <span> 3. </span>Ремонт проколов
-                    <br> <span> 4. </span> Прописка датчиков
-                </p>
-            </div>
-            <div class="service">
-                <p>Шиномонтаж <br> от 1500</p>
-            </div>
+        <div class="service">
+            <img src="images/services/Car_air_conditioner.jpg" alt="">
+            <p>Автокондиционер от 1000₽</p>
+            <button class="button"><img class="arrow" src="/images/services/str.png"/> Записаться</button>
         </div>
-        <div>
-            <div class="infoo">
-                <p>
-                    <span> 1. </span> Диагностика сход-развала <br> <span> 2. </span> Сход-развал передней оси <br> <span> 3. </span> Сход-развал перед и зад
-                </p>
-            </div>
-            <div class="service">
-                <p> Диагностика <br> от 600</p>
-            </div>
+        <div class="service">
+            <img src="images/services/Auto_electrician.jpg" alt="">
+            <p>Автоэлектрика от 300₽</p>
+            <button class="button"><img class="arrow" src="/images/services/str.png"/> Записаться</button>
         </div>
-        <div>
-            <div class="infoo">
-                <p>
-                    <span> 1. </span> Диагностика сход-развала <br> <span> 2. </span> Сход-развал передней оси <br> <span> 3. </span>Сход-развал перед и зад
-                </p>
-            </div>
-            <div class="service">
-                <p>СХОД-РАЗВАЛ 3D<br> от 600 </p>
-            </div>
+        <div class="service">
+            <img src="images/services/Diagnostics.jpg" alt="">
+            <p>Диагностика от 600₽</p>
+            <button class="button"><img class="arrow" src="/images/services/str.png"/> Записаться</button>
         </div>
-        <div>
-            <div class="infoo">
-                <p>
-                    <span> 1. </span> Ремонт двигателей <br> <span> 2. </span> Ремонт подвески <br> <span> 3. </span> Ремонт КПП <br> <span> 4. </span> Ремонт выхлопной системы
-                </p>
-            </div>
-            <div class="service">
-                <p>РЕМОНТ АВТО <br> от 700</p>
-            </div>
+        <div class="service">
+            <img src="images/services/Add_equipment.jpg" alt="">
+            <p>Дооснащение от 1500₽</p>
+            <button class="button"><img class="arrow" src="/images/services/str.png"/> Записаться</button>
         </div>
-        <div>
-            <div class="infoo">
-                <p> <span> 1. </span> Устранение неисправностей <br> <span> 2. </span> Восстановление проводки <br> <span> 3. </span> Компьютерная диагностика <br> <span> 4. </span> Промывка дросселя
-                </p>
-            </div>
-            <div class="service">
-                <p> Автоэлектрика <br> от 300</p>
-            </div>
+        <div class="service">
+            <img src="images/services/collapse.jpg" alt="">
+            <p>3D сход-развал от 1000₽</p>
+            <button class="button"><img class="arrow" src="/images/services/str.png"/> Записаться</button>
         </div>
-        <div>
-            <div class="infoo">
-                <p>
-                    <span> 1. </span>Заправка кондиционера <br> <span> 2. </span> Поиск утечек фреона <br> <span> 3. </span> Дезинфекция системы
-                </p>
-            </div>
-            <div class="service">
-                <p> Автокондиционер <br> от 1000</p>
-            </div>
+        <div class="service">
+            <img src="images/services/Repair.jpg" alt="">
+            <p>Ремонт от 700₽</p>
+            <button class="button"><img class="arrow" src="/images/services/str.png"/> Записаться</button>
         </div>
-        <div>
-            <div class="infoo">
-                <p>
-                    <span> 1. </span> Шумоизоляция дверей <br> <span> 2. </span> Шумоизоляция арок <br> <span> 3. </span> Шумоизоляция багажника <br> <span> 4. </span> Полная шумоизоляция
-                </p>
-            </div>
-            <div class="service">
-                <p> Шумоизоляция <br> от 2000</p>
-            </div>
+        <div class="service">
+            <img src="images/services/TO.jpg" alt="">
+            <p>Техническое обслуживание от 600₽</p>
+            <button class="button"><img class="arrow" src="/images/services/str.png"/> Записаться</button>
         </div>
-        <div>
-            <div class="infoo">
-                <p>
-                    <span> 1. </span>Установка головного устройства <br> <span> 2. </span>Установка динамиков <br> <span> 3. </span> Изготовление стелсов
-                </p>
-            </div>
-            <div class="service">
-                <p>Автозвук <br> от 1000</p>
-            </div>
+        <div class="service">
+            <img src="images/services/Tire_fitting.jpg" alt="">
+            <p>Шиномонтаж от 1500₽</p>
+            <button class="button"><img class="arrow" src="/images/services/str.png"/> Записаться</button>
         </div>
-        <div>
-            <div class="infoo">
-                <p>
-                    <span> 1. </span>Установка сигнализаций <br> <span> 2. </span>Скрытая установка регистратора <br> <span> 3. </span> Установка мониторов <br> <span> 4. </span> Монтаж фаркопа
-                </p>
-            </div>
-            <div class="service">
-                <p>Дооснащение <br> от 1500</p>
-            </div>
+        <div class="service">
+            <img src="images/services/Noise_isolation.jpg" alt="">
+            <p>Шумоизоляция от 2000₽</p>
+            <button class="button"><img class="arrow" src="/images/services/str.png"/> Записаться</button>
+
         </div>
     </div>
-
-
-
-    </div>
-
-
-    <table>
-        <tbody>
-            <tr>
-                <th>НАЗВАНИЕ РАБОТЫ</th>
-                <th>ТРЕБУЕТ ВРЕМЕНИ</th>
-                <th>ЦЕНА РУБ.</th>
-                <th>
-                </th>
-            </tr>
-            <tr>
-                <td class=" NameServiceFirst ">Масло в двигателе - замена</td>
-                <td>
-                    <div class="info">40 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 800 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceSecond ">Масляный фильтр - замена</td>
-                <td>
-                    <div class="info">20 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 480 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceFirst ">Воздушный фильтр - замена</td>
-                <td>
-                    <div class="info">25 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 320 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceSecond ">Салонный фильтр - замена</td>
-                <td>
-                    <div class="info">35 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 640 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceFirst ">Топливный фильтр - замена</td>
-                <td>
-                    <div class="info">50 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 960 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceSecond "> Масло в АКПП - замена</td>
-                <td>
-                    <div class="info">60 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 1600 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceFirst ">Ремни и цепи ГРМ - замена</td>
-                <td>
-                    <div class="info">240 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 6400 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceSecond ">Приводные ремни - замена</td>
-                <td>
-                    <div class="info">40 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 800 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceFirst ">Тормозная жидкость - замена</td>
-                <td>
-                    <div class="info">75 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 1600 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceSecond ">Охлаждающая жидкость - замена</td>
-                <td>
-                    <div class="info">75 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 1600 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceFirst ">Свечи зажигания - замена</td>
-                <td>
-                    <div class="info">50 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 640 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceSecond "> Тормозные колодоки - замена</td>
-                <td>
-                    <div class="info">60 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 1600 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="NameServiceFirst "> Тормозные диски - замена</td>
-                <td>
-                    <div class="info">60 минут</div>
-                </td>
-                <td>
-                    <div class="info">От 1600 ₽</div>
-                </td>
-                <td>
-                    <div class="Recording">Записаться на ТО</div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="whyus">
-        <div class="cont">
-            <div class="item">
-                <img src="/images/whyus/icon-repairs.png" alt="">
-                <p> Ремонт точно в срок </p>
-            </div>
-            <div class="item">
-                <img src="/images/whyus/guarantee.png" alt="">
-                <p> Гарантия на работу
-                    <br/>2 года!</p>
-            </div>
-            <div class="item">
-                <img src="/images/whyus/trust.png" alt="">
-                <p>Доступные цены</p>
-            </div>
-            <div class="item">
-                <img src="/images/whyus/location.png" alt="">
-                <p>Бесплатная парковка для клиентров</p>
-            </div>
-            <div class="item">
-                <img src="/images/whyus/opit.png" alt="">
-                <p>Квалифицированный персонал</p>
-            </div>
-            <div class="item">
-                <img src="/images/whyus/location.png" alt="">
-                <p>стандарты обслуживания</p>
-            </div>
+    <footer>
+        <div class="AboutUs">
+            <p class="head">O нас</p>
+            <p>Мы являемся ведущим автосервисом <br> в Москве и предоставляем <br> полный пакет услуг по <br> обслуживанию вашего автомобиля.</p>
         </div>
-    </div>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adc6697e85f753b1ad1bbad8b8632feaf597da431fd7755afa6153df39ce8524d&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
-
+        <div class="OurServices">
+            <p class="head">Услуги</p>
+            <p>Автозвук</p>
+            <p>Автокондиционер</p>
+            <p>Автоэлектрика</p>
+            <p>Диагностика</p>
+            <p>Дооснащение</p>
+            <p>3D сход-развал</p>
+            <p>Ремонт</p>
+            <p>Техническое обслуживание</p>
+            <p>Шиномонтаж</p>
+            <p>Шумоизоляция</p>
+        </div>
+        <div class="Support">
+            <p class="head">Служба поддержки</p>
+            <p>Блог</p>
+            <p>Политика конфиденциальности</p>
+            <p>Получите бесплатное предложение</p>
+            <p>Записаться на прием</p>
+            <p>Условия и положения</p>
+            <p>Часто задаваемые вопросы</p>
+            <p>Карта сайта</p>
+        </div>
+        <div class="contact">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <button>Записаться</button>
+        </div>
+    </footer>
 </body>
 
 <script src="libs/jquery.min.js "></script>
