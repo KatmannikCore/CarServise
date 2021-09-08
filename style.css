@@ -1,0 +1,585 @@
+                                /* Box sizing rules */
+                                
+                                *,
+                                *::before,
+                                *::after {
+                                    box-sizing: border-box;
+                                }
+                                /* Remove default padding */
+                                
+                                ul[class],
+                                ol[class] {
+                                    padding: 0;
+                                }
+                                /* Remove default margin */
+                                
+                                body,
+                                h1,
+                                h2,
+                                h3,
+                                h4,
+                                p,
+                                ul[class],
+                                ol[class],
+                                li,
+                                figure,
+                                figcaption,
+                                blockquote,
+                                dl,
+                                dd {
+                                    margin: 0;
+                                }
+                                /* Set core body defaults */
+                                
+                                body {
+                                    min-height: 100vh;
+                                    scroll-behavior: smooth;
+                                    text-rendering: optimizeSpeed;
+                                    line-height: 1.5;
+                                }
+                                /* Remove list styles on ul, ol elements with a class attribute */
+                                
+                                ul[class],
+                                ol[class] {
+                                    list-style: none;
+                                }
+                                /* A elements that don't have a class get default styles */
+                                
+                                a:not([class]) {
+                                    text-decoration-skip-ink: auto;
+                                }
+                                /* Make images easier to work with */
+                                
+                                img {
+                                    max-width: 100%;
+                                    display: block;
+                                }
+                                /* Natural flow and rhythm in articles by default */
+                                
+                                article>*+* {
+                                    margin-top: 1em;
+                                }
+                                /* Inherit fonts for inputs and buttons */
+                                
+                                input,
+                                button,
+                                textarea,
+                                select {
+                                    font: inherit;
+                                }
+                                /* Remove all animations and transitions for people that prefer not to see them */
+                                
+                                @media (prefers-reduced-motion: reduce) {
+                                    * {
+                                        animation-duration: 0.01ms !important;
+                                        animation-iteration-count: 1 !important;
+                                        transition-duration: 0.01ms !important;
+                                        scroll-behavior: auto !important;
+                                    }
+                                }
+                                
+                                body {
+                                    font-family: "Montserrat", Sans-serif;
+                                    background: black;
+                                }
+                                /*/////////////////
+                                ///////header//////
+                                /////////////////*/
+                                
+                                header {
+                                    background-color: black;
+                                    font-family: "Montserrat", Sans-serif;
+                                    border-bottom: #f18800 2px solid;
+                                }
+                                
+                                header .First {
+                                    height: 80px;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                
+                                header .First a {
+                                    color: white;
+                                    text-decoration: none;
+                                    font-size: 18px;
+                                    display: block;
+                                    height: 30px;
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+                                    font-weight: 400;
+                                }
+                                
+                                header .First a:hover {
+                                    color: #f18800;
+                                    border-bottom: #f18800 2px solid;
+                                }
+                                
+                                header .Second {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                
+                                header .Second img {
+                                    height: 80px;
+                                    padding-right: 20px;
+                                }
+                                
+                                header .Second .button {
+                                    background-color: #f18800;
+                                    padding: 5px 0px;
+                                    color: white;
+                                    font-weight: 100;
+                                    font-size: 18px;
+                                    border-radius: 3px;
+                                    text-align: center;
+                                    width: 150px;
+                                    float: right;
+                                }
+                                
+                                .AllHeader {
+                                    display: flex;
+                                    max-width: 80%;
+                                    margin: 0 auto;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                                /*/////////////////
+                                ///////start///////
+                                /////////////////*/
+                                
+                                .start {
+                                    height: 800px;
+                                    background-image: url("images/body/automobile.jpg");
+                                    background-size: 100% 100%;
+                                }
+                                
+                                .start h1 {
+                                    max-width: 80%;
+                                    margin: 0 auto;
+                                    color: white;
+                                    font-weight: 100;
+                                    font-size: 70px;
+                                    line-height: 100px;
+                                    position: relative;
+                                    top: 10%;
+                                }
+                                /*/////////////////
+                                ///////slider//////
+                                /////////////////*/
+                                
+                                .slider .slick-list {
+                                    overflow: hidden;
+                                }
+                                
+                                .slider .slick-track {
+                                    display: flex;
+                                    height: 400px;
+                                }
+                                
+                                .slider .slick-arrow {
+                                    position: absolute;
+                                    opacity: 0;
+                                }
+                                
+                                .slider {
+                                    max-width: 80%;
+                                    margin: 0 auto;
+                                }
+                                
+                                .slider .slick-slide {
+                                    padding: 50px;
+                                }
+                                
+                                .sliderHead {
+                                    background-color: #151515;
+                                }
+                                /*/ ////////////////
+                            //////footer/////
+                            /////////////////*/
+                                
+                                footer {
+                                    background-color: #151515;
+                                }
+                                
+                                footer nav {
+                                    color: white;
+                                    display: flex;
+                                    max-width: 80%;
+                                    margin: 0 auto;
+                                    font-size: 20px;
+                                }
+                                
+                                footer nav div {
+                                    margin: 30px;
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                
+                                footer nav div .head {
+                                    font-size: 24px;
+                                    margin-bottom: 30px;
+                                    margin-left: -25px;
+                                }
+                                
+                                footer nav p:before {
+                                    content: "";
+                                    background-image: url(images/footer/menu_icon.png);
+                                    width: 30px;
+                                    height: 30px;
+                                    display: inline-block;
+                                    background-repeat: no-repeat;
+                                    position: absolute;
+                                    margin-top: 3px;
+                                    margin-left: -25px;
+                                    margin-right: 0px !important;
+                                }
+                                
+                                footer nav p {
+                                    margin-top: 10px;
+                                    font-size: 14px;
+                                }
+                                
+                                footer nav div {
+                                    margin-right: 50px;
+                                }
+                                
+                                footer nav .AboutUs .head {
+                                    margin-left: 0px;
+                                }
+                                
+                                footer nav .contact input {
+                                    border-radius: 7px;
+                                }
+                                
+                                textarea {
+                                    height: 100px;
+                                    border-radius: 7px;
+                                    margin: 0px 0px 30px 0px;
+                                }
+                                
+                                footer nav input {
+                                    margin-bottom: 20px;
+                                }
+                                
+                                footer nav .contact div {
+                                    width: 100%;
+                                    background: #FB4848;
+                                    margin: 0;
+                                    text-align: center;
+                                    font-size: 16px;
+                                    padding: 7px 0;
+                                }
+                                
+                                footer nav .contact .head {
+                                    margin-left: 0px;
+                                }
+                                /*/////////////////
+                                    ////sliderReviews//
+                                    /////////////////*/
+                                
+                                .sliderReviews {
+                                    max-width: 80%;
+                                    margin: 0 auto;
+                                }
+                                
+                                .sliderReviews .slick-track {
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                }
+                                
+                                .Reviews .Circle {
+                                    background-color: grey;
+                                    height: 100px;
+                                    width: 100px;
+                                    border-radius: 50%;
+                                    position: relative;
+                                    top: 10%;
+                                    left: 30%;
+                                }
+                                
+                                .sliderReviews .slick-list {
+                                    overflow: hidden;
+                                }
+                                
+                                .sliderReviews .slick-dots {
+                                    margin-top: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                
+                                .sliderReviews .slick-dots li {
+                                    list-style: none;
+                                }
+                                
+                                .sliderReviews .slick-dots button {
+                                    font-size: 0;
+                                    width: 16px;
+                                    height: 16px;
+                                    background-color: white;
+                                    border-radius: 50%;
+                                }
+                                
+                                .sliderReviews .slick-dots li.slick-active button {
+                                    background-color: transparent;
+                                    border: 1px solid #fff;
+                                }
+                                
+                                .ReviewsPlase {
+                                    width: 80%;
+                                    background-color: white;
+                                    align-items: center;
+                                    border: 2px solid #f18800;
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                
+                                .ReviewsPlase p.reviews {
+                                    text-align: center;
+                                    padding-top: 10%;
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                }
+                                
+                                .ReviewsPlase p.reviews {
+                                    color: grey;
+                                }
+                                
+                                .Person img {
+                                    height: 10px;
+                                    position: relative;
+                                    bottom: 2px;
+                                    left: 10px;
+                                }
+                                
+                                .Person {
+                                    display: flex;
+                                    align-items: flex-end;
+                                    padding-top: 5%;
+                                    padding-bottom: 3%;
+                                }
+                                
+                                p.Name {
+                                    font-size: 10px;
+                                    color: black;
+                                    font-weight: 900;
+                                }
+                                
+                                .Reviews.slick-slide {
+                                    opacity: 0.4;
+                                }
+                                
+                                .Reviews.slick-center {
+                                    opacity: 1;
+                                    transform: scale(1.1);
+                                    transition-duration: 500ms;
+                                }
+                                /*/////////////////
+                                //////servises/////
+                                /////////////////*/
+                                /*
+                            .services {
+                                display: flex;
+                                flex-wrap: wrap;
+                                max-width: 80%;
+                                margin: 0 auto;
+                                background-color: white;
+                            }
+                            */
+                                /*/////////////////
+                                //////servises/////
+                                /////////////////*/
+                                
+                                .services {
+                                    /*display: flex;
+                                flex-wrap: wrap;
+                                max-width: 80%;
+                                margin: 0 auto;
+                                background-color: white;*/
+                                    padding-top: 2%;
+                                }
+                                
+                                * {
+                                    margin: 0;
+                                    padding: 0;
+                                    -webkit-box-sizing: border-box;
+                                    box-sizing: border-box;
+                                }
+                                
+                                .wrapper {
+                                    width: 100%;
+                                    margin: 0 auto;
+                                    max-width: 80%;
+                                }
+                                
+                                .cols {
+                                    display: -webkit-box;
+                                    display: -ms-flexbox;
+                                    display: flex;
+                                    -ms-flex-wrap: wrap;
+                                    flex-wrap: wrap;
+                                    -webkit-box-pack: center;
+                                    -ms-flex-pack: center;
+                                    justify-content: center;
+                                }
+                                
+                                .col {
+                                    width: calc(20% - 2rem);
+                                    margin: 1rem;
+                                    cursor: pointer;
+                                }
+                                
+                                .container {
+                                    -webkit-transform-style: preserve-3d;
+                                    transform-style: preserve-3d;
+                                    -webkit-perspective: 1000px;
+                                    perspective: 1000px;
+                                }
+                                
+                                .front,
+                                .back {
+                                    background-size: cover;
+                                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+                                    border-radius: 10px;
+                                    background-position: center;
+                                    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+                                    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+                                    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+                                    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+                                    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+                                    -webkit-backface-visibility: hidden;
+                                    backface-visibility: hidden;
+                                    text-align: center;
+                                    min-height: 280px;
+                                    height: auto;
+                                    border-radius: 10px;
+                                    color: #fff;
+                                    font-size: 1.5rem;
+                                }
+                                
+                                .back {
+                                    background: #151515;
+                                    background: -webkit-linear-gradient(45deg, #151515 0%, rgb(0, 0, 0) 100%);
+                                    background: -o-linear-gradient(45deg, #151515 0%, rgb(0, 0, 0)100%);
+                                    background: linear-gradient(45deg, #151515 0%, rgb(0, 0, 0) 100%);
+                                }
+                                
+                                .front:after {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    z-index: 1;
+                                    width: 100%;
+                                    height: 100%;
+                                    content: '';
+                                    display: block;
+                                    opacity: .6;
+                                    background-color: #000;
+                                    -webkit-backface-visibility: hidden;
+                                    backface-visibility: hidden;
+                                    border-radius: 10px;
+                                }
+                                
+                                .container:hover .front,
+                                .container:hover .back {
+                                    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+                                    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+                                    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+                                    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+                                    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+                                }
+                                
+                                .back {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                }
+                                
+                                .inner {
+                                    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+                                    transform: translateY(-50%) translateZ(60px) scale(0.94);
+                                    top: 50%;
+                                    position: absolute;
+                                    left: 0;
+                                    width: 100%;
+                                    padding: 2rem;
+                                    -webkit-box-sizing: border-box;
+                                    box-sizing: border-box;
+                                    outline: 1px solid transparent;
+                                    -webkit-perspective: inherit;
+                                    perspective: inherit;
+                                    z-index: 2;
+                                }
+                                
+                                .container .back {
+                                    -webkit-transform: rotateY(180deg);
+                                    transform: rotateY(180deg);
+                                    -webkit-transform-style: preserve-3d;
+                                    transform-style: preserve-3d;
+                                }
+                                
+                                .container .front {
+                                    -webkit-transform: rotateY(0deg);
+                                    transform: rotateY(0deg);
+                                    -webkit-transform-style: preserve-3d;
+                                    transform-style: preserve-3d;
+                                }
+                                
+                                .container:hover .back {
+                                    -webkit-transform: rotateY(0deg);
+                                    transform: rotateY(0deg);
+                                    -webkit-transform-style: preserve-3d;
+                                    transform-style: preserve-3d;
+                                }
+                                
+                                .container:hover .front {
+                                    -webkit-transform: rotateY(-180deg);
+                                    transform: rotateY(-180deg);
+                                    -webkit-transform-style: preserve-3d;
+                                    transform-style: preserve-3d;
+                                }
+                                
+                                .front .inner p {
+                                    font-size: 2rem;
+                                    margin-bottom: 2rem;
+                                    position: relative;
+                                }
+                                
+                                .front .inner p:after {
+                                    content: '';
+                                    width: 4rem;
+                                    height: 2px;
+                                    position: absolute;
+                                    background: #C6D4DF;
+                                    display: block;
+                                    left: 0;
+                                    right: 0;
+                                    margin: 0 auto;
+                                    bottom: -.75rem;
+                                }
+                                
+                                .front .inner span {
+                                    color: rgba(255, 255, 255, 0.7);
+                                    font-family: 'Montserrat';
+                                    font-weight: 300;
+                                }
+                                
+                                @media screen and (max-width: 64rem) {
+                                    .col {
+                                        width: calc(33.333333% - 2rem);
+                                    }
+                                }
+                                
+                                @media screen and (max-width: 48rem) {
+                                    .col {
+                                        width: calc(50% - 2rem);
+                                    }
+                                }
+                                
+                                @media screen and (max-width: 32rem) {
+                                    .col {
+                                        width: 100%;
+                                        margin: 0 0 2rem 0;
+                                    }
+                                }
