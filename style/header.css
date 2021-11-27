@@ -1,0 +1,78 @@
+header {
+    background-color: black;
+    font-family: "Montserrat", Sans-serif;
+    border-bottom: #f18800 2px solid;
+}
+
+header .First {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header .First a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 400;
+}
+
+header .First a:hover {
+    color: #f18800;
+    border-bottom: #f18800 2px solid;
+}
+
+header .Second {
+    display: flex;
+    align-items: center;
+}
+
+header .Second img {
+    height: 80px;
+    padding-right: 20px;
+}
+
+header .Second .button {
+    background-color: #f18800;
+    padding: 5px 0px;
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+    border-radius: 3px;
+    text-align: center;
+    width: 150px;
+    float: right;
+}
+
+.AllHeader {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+/*/////////////////
+///////start///////
+/////////////////*/
+
+.start {
+    height: 650px;
+    background-image: url("../images/body/sec.jpg");
+    background-size: 100% 100%;
+}
+
+.start h1 {
+    max-width: 80%;
+    margin: 0 auto;
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 80px;
+    position: relative;
+    top: 20%;
+    opacity: 0;
+}

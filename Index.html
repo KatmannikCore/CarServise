@@ -5,30 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/slider.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/reviews.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Document</title>
 </head>
-
-
 <body>
     <header>
-        <nav class="AllHeader">
-            <nav class="First">
-                <a href="">Меню</a>
-                <a href="">Контакты</a>
-                <a href="">Услуги</a>
-                <a href="">Блог</a>
-                <a href="">Галерея</a>
-                <a href="">Контакты</a>
-            </nav>
-            <nav style="color: aliceblue;"> +7 (495) 227-79-45 <br>  +7 (915) 480-12-22</nav>
-            <nav class="Second">
-                <img src="images/header/logoDemo.png" alt="">
-                <div class="button">
-                    Записаться
-                </div>
-            </nav>
-        </nav>
     </header>
     <div class="start">
         <h1>Качественный ремонт вашего автомобиля <br> Индивидуальны подход к каждому клиенту</h1>
@@ -52,7 +38,7 @@
     <div class="services">
         <div class="wrapper">
             <div class="cols">
-                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="col" onClick='location.href="/module/service/service.html"' ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
                         <div class="front" style="background-image: url(/images/services/TO.jpg)">
                             <div class="inner">
@@ -297,11 +283,10 @@
             </div>
         </nav>
     </footer>
-
 </body>
 
 <script src="libs/jquery.min.js "></script>
 <script src="libs/slick/slick.min.js "></script>
-<script src="script.js "></script>
+<script type="module" src="script.js"></script>
 
 </html>

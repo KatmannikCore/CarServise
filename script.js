@@ -1,3 +1,7 @@
+import {CreateMenu} from "./js/headerMenu.js";
+let urlLogo = '/images/header/logoDemo.png';
+document.querySelector('header').append(CreateMenu(urlLogo));
+
 $(document).ready(function() {
     $('.slider').slick({
         slidesToShow: 6,
@@ -6,10 +10,6 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
     });
 })
-
-
-
-
 $(document).ready(function() {
     $('.sliderReviews').slick({
         slidesToShow: 3,
@@ -22,3 +22,6 @@ $(document).ready(function() {
         autoplaySpeed: 1500,
     });
 })
+document.querySelectorAll(".col").forEach(element => element.addEventListener('click', function(){
+    document.location.href="/module/service/service.html";
+}) );
