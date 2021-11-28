@@ -1,0 +1,21 @@
+.description-servise{
+    color: aliceblue;
+    background-color:   #1b1f28;
+    padding: 10px;
+}
+
+.description-servise h1 {
+    text-align: center;
+}
+.description-servise .container{
+    display: grid;
+    grid-template: 1fr / repeat(4,200px);
+    grid-auto-rows: auto;
+    justify-content: center;
+}
+.description-servise_item{
+    padding: 40px;
+}
+.link{
+    display: flex;
+}
