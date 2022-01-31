@@ -1,4 +1,4 @@
-function CreateMenu(urlLogo){
+function CreateMenu(){
     let menu = document.createElement('header');
     menu.innerHTML = `<nav class='AllHeader'>
                         <nav class='First'>

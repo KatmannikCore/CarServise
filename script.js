@@ -22,6 +22,7 @@ $(document).ready(function() {
         autoplaySpeed: 1500,
     });
 })
-document.querySelectorAll(".col").forEach(element => element.addEventListener('click', function(){
+document.querySelectorAll(".col").forEach(element => element.addEventListener('click', function(e){
+    localStorage.setItem('service_index', e.currentTarget.querySelector('p.service_index').textContent);
     document.location.href="/module/service/service.html";
 }) );
