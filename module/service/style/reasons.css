@@ -1,0 +1,58 @@
+c-reasons-list__item-text:before {
+    content: "\f00c";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    left: -14px;
+    font-family: FontAwesome,serif;
+    font-size: 16px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #02cc74;
+    color: #fff;
+}
+.c-reasons-list__item-wrap img{
+    height: 75px;
+    width: 75px;
+    margin: 0 auto;
+}
+.c-reasons-list{
+    font-size: 14px;
+    line-height: 1.5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 1.5em 2.5em 1em;
+    border: 2px solid #ffc633;
+    border-radius: 15px;
+    background: repeating-linear-gradient(-45deg,#494949,#494949 5%,rgb(0, 0, 0) 0,rgb(0, 0, 0) 50%) 100%/14px 14px;
+    text-align: center;
+}
+.c-reasons-list{
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.reasons_text{
+    margin-top: 50px;
+    font-size: 2rem !important;
+    line-height: 1.3;
+    font-family: RobotoCondensed,Roboto,Segoe UI,Droid Sans,Helvetica Neue,Arial,sans-serif;
+    color: white;
+    text-align: center;
+}
+.list__item-text{
+    color: #fff !important;
+}
