@@ -1,6 +1,6 @@
 import {CreateMenu} from "./js/headerMenu.js";
 let urlLogo = '/images/header/logoDemo.png';
-document.querySelector('header').append(CreateMenu(urlLogo));
+document.body.prepend(CreateMenu(urlLogo));
 
 $(document).ready(function() {
     $('.slider').slick({

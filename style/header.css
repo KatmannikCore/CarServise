@@ -36,7 +36,7 @@ header .Second img {
     padding-right: 20px;
 }
 
-header .Second .button {
+header .Second .button, .nav .button {
     background-color: #f18800;
     padding: 5px 0px;
     color: white;
@@ -74,5 +74,69 @@ header .Second .button {
     line-height: 80px;
     position: relative;
     top: 20%;
-    opacity: 0;
+    opacity: 1;
 }
+@media screen and (max-width: 1200px){
+    .AllHeader{
+        max-width: 100%;
+    }
+    header .Second img{
+        height: 50px;
+    }
+}
+@media screen and (max-width: 950px){
+    header .number{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    header .Second img{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .AllHeader{
+        display: none;
+    }
+    header{
+        border-bottom: 0px;
+    }
+    .nav-toggle{
+        background: none !important;
+    }
+    .start{
+        background-image: url("../images/back_mobail.jpg") !important;
+    }
+    .start h1{
+        font-size: 25px;
+        display: block;
+        top: 200px;
+        color: #FDF4E3;
+        font-weight: 500;
+        line-height: 60px;
+    }
+}
+
+/* @media screen and (max-width: 600px){
+    .First{
+        height: 100% !important;
+        flex-direction: column;
+    }
+    .First a{
+        display: block !important;
+        width: 100%;
+        font-size: 26px !important;
+        margin-top: 15px; 
+    }
+    header{
+        height: 100%;
+    }
+    .AllHeader{
+        flex-direction: column;
+        padding: 20px;
+    }
+    header .button{
+        margin-top: 15px;
+    }
+} */

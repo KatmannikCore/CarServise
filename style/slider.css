@@ -24,4 +24,9 @@
 .sliderHead {
     background-color: #151515;
 }
-        
+
+@media screen and (max-width: 1200px){
+    .slider{
+        max-width: 100%;
+    }
+}

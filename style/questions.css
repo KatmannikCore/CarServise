@@ -29,3 +29,16 @@
     text-align: center;
     margin-bottom: 30px;
 }
+@media screen and (max-width: 1000px){
+    .questions > div{
+        flex: 0 1 70%;
+        margin-left: 0;
+    }
+
+}
+@media screen and (max-width: 550px){
+    .questions > div{
+        flex: 0 1 90%;
+    }
+
+}

@@ -186,6 +186,24 @@
 @media screen and (max-width: 32rem) {
     .col {
         width: 100%;
-        margin: 0 0 2rem 0;
+        margin:  2rem ;
+    }
+}
+@media screen and (max-width: 1200px){
+    .wrapper{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 900px){
+    .slider .slick-track{
+        height: 100%;
+    }
+    .slider .slick-slide{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .sliderHead{
+        display: none;
     }
 }
