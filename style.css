@@ -91,3 +91,17 @@ body {
     margin-top: 20px;
 }
 
+
+    .start, .sliderHead, .services{
+        max-width: 1920px;
+        margin: 0 auto; 
+    }
+
+map{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+map iframe{
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.7);
+}

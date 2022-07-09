@@ -24,28 +24,31 @@
         </div>
         <div class="order">
             <p>Заполните форму и мы с вами свяжемся </p>
-            <hr>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="">Имя, отчество</span>
+            
+            <form action="../../mail.php" method="POST">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="">Имя, отчество</span>
+                    </div>
+                    <input type="text" name="user_name" class="form-control">
+                    <input type="text" name="user_last-name" class="form-control">
+                </div> 
+                <hr style="opacity: 0;">
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Ваш автомобиль</span>
+                    </div>
+                    <input type="text" name="auto" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                 </div>
-                <input type="text" class="form-control">
-                <input type="text" class="form-control">
-            </div> 
-            <hr style="opacity: 0;">
-            <div class="input-group input-group-sm mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Ваш автомобиль</span>
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" name="phone" id="inputGroup-sizing-sm">Номер телефона</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                 </div>
-                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-            </div>
-            <div class="input-group input-group-sm mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Номер телефона</span>
-                </div>
-                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-            </div>
-            <button type="button" class="btn btn-warning">Записаться</button>
+                <button type="submit"  class="btn btn-warning">Записаться</button>
+            </form>
+            
         </div>
     </div>
     <p class="reasons_text">7 причин обслуживаться у нас</p>

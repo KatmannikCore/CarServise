@@ -21,8 +21,21 @@ function CreateTable(){
         tr.innerHTML = `<td>${item.name}</td> <td class='price' >${item.prise}</td>`
         return tr
    } )
-    
+} 
+async function formSend(){
+    let form = document.querySelector('.order form')
+    let formData = new FormData(form)
+    let response = await fetch('sendmail.php',{
+        method: 'POST',
+        body: formData
+    })
+    if(response.ok){
+        let result = await response.json()
+        alert(result.message)
+        form.reset();
+    }
 }
+FormData
 
 let table = document.querySelector('tbody');
 CreateTable().forEach(item => {table.append(item)})

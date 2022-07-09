@@ -25,6 +25,7 @@ function CreateMenu(){
                     <div class='AllHeader menu'>
                         <nav class='First'>
                             <a href=''>Меню</a>
+                            <a href="../../Index.html">Главная</a>
                             <a href=''>Контакты</a\>
                             <a href=''>Услуги</a>
                             <a href=''>Блог</a>

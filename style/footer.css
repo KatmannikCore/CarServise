@@ -5,7 +5,8 @@ footer {
 footer nav {
     color: white;
     display: flex;
-    max-width: 80%;
+    justify-content: space-around;
+    max-width: 1920px;
     margin: 0 auto;
     font-size: 100%;
 }
@@ -74,6 +75,12 @@ footer nav .contact div {
 footer nav .contact .head {
     margin-left: 0px;
 }
+@media screen and (max-width: 1920px){
+    footer nav{
+        max-width: 80%;
+
+    }
+}
 @media screen and (max-width: 1200px){
     footer nav{
         max-width: 100%;
@@ -87,9 +94,24 @@ footer nav .contact .head {
         flex-direction: column;
     }
     footer nav p{
-       padding-left: 20px;
+       padding-left: 200px;
     }
     footer nav .head{
         text-align: center;
     }
+    footer .AboutUs{
+        text-align: center;
+    }
+    footer .contact input{
+        width: 200px;
+    }
+    footer .contact textarea{
+        width: 200px;
+    }
+    footer .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+  
 }

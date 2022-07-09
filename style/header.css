@@ -2,6 +2,8 @@ header {
     background-color: black;
     font-family: "Montserrat", Sans-serif;
     border-bottom: #f18800 2px solid;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 header .First {

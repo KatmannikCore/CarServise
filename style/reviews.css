@@ -1,7 +1,6 @@
 .sliderReviews {
-    max-width: 80%;
+    max-width: 1920px;
     margin: 0 auto;
-    
 }
 
 .sliderReviews .slick-track {
@@ -88,6 +87,11 @@ p.Name {
 .Reviews{
     position: relative;
     right: -0.8%;
+}
+@media screen and (max-width: 1920px){
+    .sliderReviews {
+        max-width: 80%;
+    }
 }
 @media screen and (max-width: 1200px){
     .sliderReviews {
