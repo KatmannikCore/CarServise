@@ -12,14 +12,14 @@ function CreateTable(){
 
     if(nameService === '')
         nameService = arrayService[localStorage.service_index].name
-    console.log(arrayService[localStorage.service_index])
+        console.log(nameService)
     document.querySelector('.name_service').textContent = nameService
     
     return arrayService[localStorage.service_index].services.map(item =>{
         let tr = document.createElement("tr");
         tr.innerHTML = `<td>${item.name}</td> <td class='price' >${item.prise}</td>`
         return tr
-   } )
+    } )
 } 
 async function formSend(){
     let form = document.querySelector('.order form')
@@ -38,3 +38,34 @@ FormData
 
 let table = document.querySelector('tbody');
 CreateTable().forEach(item => {table.append(item)})
+
+document.querySelectorAll(".switch_services a").forEach(element => element.addEventListener('click', function(e){
+    localStorage.setItem('service_index', e.currentTarget.id);
+    console.log(e.currentTarget.id)
+    console.log(localStorage)
+    document.location.href="/module/service/service.html";
+}) );
+
+window.addEventListener('scroll', function() {
+    console.log(window.scrollY)
+    if(window.scrollY > 200){
+        this.document.querySelector('.switch_services').classList.add('switch_services_active') 
+    }
+    if(window.scrollY < 200){
+        this.document.querySelector('.switch_services').classList.remove('switch_services_active') 
+    }
+});
+function openModalContacts(){
+    document.querySelector('.modal_wrapper').hidden = false;
+    document.querySelector('.bacround').hidden = false;
+}
+document.querySelector('.close').addEventListener('click', fiddenModal)
+document.querySelector('.bacround').addEventListener('click', fiddenModal)
+function fiddenModal(){
+    document.querySelector('.modal_wrapper').hidden = true;
+    document.querySelector('.bacround').hidden = true;
+}
+document.querySelector('.toggle_menu').addEventListener('click', ()=>{
+    document.querySelector('.nav').classList.toggle('open_menu')
+    document.querySelectorAll('.nav > ul > li ').forEach(item => item.classList.toggle('open_li'))
+})

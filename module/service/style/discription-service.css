@@ -19,3 +19,6 @@
 .link{
     display: flex;
 }
+.modal_wrapper{
+    top: 10% !important;
+}

@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="style/sub_header.css">
     <link rel="stylesheet" href="../../style/menu.css">
     <link rel="stylesheet" href="../../style/footer.css">
+    <link rel="stylesheet" href="../../style/modal.css  ">
+    <link rel="stylesheet" href="style/switch-services.css">
+    <meta name="description" content="Автотехцентр СТО АВТО - предоставляет широкий спектр услуг по обслуживанию, ремонту и дооснащению автомобилей. ТО, замена ремней ГРМ, автоэлектрика, ремонт двигателей, сход-развал 3D, шиномонтаж, ремонт тормозной системы, ремонт и обслуживание кондиционеров, сварочные работы." />
     <title>Автосервис СТО АВТО</title>
 </head>
 <body>
@@ -31,49 +34,85 @@
         </div>
     </div>
     <header>
-        <input type="checkbox" id="nav-toggle" hidden>
-                    <nav class="nav">
-                        <div class="logo">
-                            <img src='/images/header/logoDemo.png' alt=''>
-                        </div>
-                        <ul>
-                            <li><p><a>Меню</a></p>
-                            <li><p><a href="../../index.htm">Главная</a></p>
-                            <li><p><a href="">О тех-центре</a></p>
-                            <li><p><a href="">Услуги</a></p>
-                            <li><p><a href="">Корпоративным клиентам</a></p>
-                            <li><p><a href="">Гарантия</a></p>
-                            <li><p><a href="">Контакты</a></p>
-                            <li>
-                                <div class="button_wrapper">
-                                    <div class='button'>Записаться</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class='AllHeader menu'>
-                        <img class="logo" src='/images/header/logoDemo.png' alt=''>
-                        <nav class='First'>
-                            <a href="../../index.htm">Главная</a>
-                            <a href=''>О тех-центре</a\>
-                            <a href=''>Услуги</a>
-                            <a href=''>Корпоративным клиентам</a>
-                            <a href=''>Гарантия</a>
-                            <a href=''>Контакты</a>
-                        </nav>
-                        <div class="order">
-                            <img class="phone" src="/images/header/phone.png" alt="">
-                            <div>
-                                <nav class="number" style='color: aliceblue;'> +7 (495) 227-79-45</nav>
-                                <div class='button'>Записаться</div>
-                            </div>
-                        </div>
-                        
+        <div class="toggle_menu">&#9776;</div>  
+        <nav class="nav_menu">
+            <div class="logo">
+                <img src='/images/header/logoDemo.png' alt=''>
+            </div>
+            <ul>
+                <li><p><a>Меню</a></p>
+                <li><p><a href="../../index.htm">Главная</a></p>
+                <li><p><a>О тех-центре</a></p>
+                <li><p><a>Услуги</a></p>
+                <li><p><a>Корпоративным клиентам</a></p>
+                <li><p><a>Гарантия</a></p>
+                <li><p><a onclick="openModalContacts()" >Контакты</a></p>
+                <li>
+                    <div class="button_wrapper">
+                        <div class='button'>Записаться</div>
                     </div>
+                </li>
+            </ul>
+        </nav>
+        <div class='AllHeader menu'>
+            <img class="logo" src='/images/header/logoDemo.png' alt=''>
+            <nav class='First'>
+                <a href="../../index.htm">Главная</a>
+                <a>О тех-центре</a\>
+                <a>Услуги</a>
+                <a>Корпоративным клиентам</a>
+                <a>Гарантия</a>
+                <a onclick="openModalContacts()">Контакты</a>
+            </nav>
+            <div class="order">
+                <img class="phone" src="/images/header/phone.png" alt="">
+                <div>
+                    <nav class="number" style='color: aliceblue;'> +7 (495) 227-79-45</nav>
+                    <div class='button'>Записаться</div>
+                </div>
+            </div>
+        </div>
     </header>
-    <label for="nav-toggle" class="nav-toggle" onclick></label>
+    <div class="switch_services">
+        <div class="switch_services_wrapper">
+            <div>
+                <p><a id="0">Техническое обслуживание</a></p>
+            </div>
+            <div>
+                <p><a id="1">Шиномонтаж</a></p>
+            </div>
+            <div>
+                <p><a id="2">3D Cход-развал</a></p>
+            </div>
+            <div>
+                <p><a id="3">Диагностика</a></p>
+            </div>
+            <div>
+                <p><a id="4">Ремонт</a></p>
+            </div>
+            <div>
+                <p><a id="5">Автоэлектрика</a></p>
+            </div>
+            <div>
+                <p><a id="6">Автокондиционер</a></p>
+            </div>
+            <div>
+                <p><a id="7">Шумоизоляция</a></p>
+            </div>
+            <div>
+                <p><a id="8">Автозвук</a></p>
+            </div>
+            <div>
+                <p><a id="9">Дооснощение</a></p>
+            </div>
+        </div>
+        <div class="show_services">
+            <div>\/</div>
+        </div>
+    </div>
+
     <div class="sub_header">
-        <div class="description">
+        <div class="info">
             <p class="name_service"></p>
             <p>Автосервис «СтоАвто» <br> по обслуживанию и <br> ремонту автомобилей <br> в Москве</p>
         </div>
@@ -118,6 +157,27 @@
             </table>
         </div>
     </section>
+    <div class="bacround" hidden ></div>
+    <div class="modal_wrapper" hidden>
+        <div class="modal_window">
+            <div class="close">x</div>
+            <div class="sub_modal">
+                <div class="modal_two">
+                    <div class="text">
+                        <h3>Москва, ул. Нагорная, д.3 стр.10</h3>
+                        <p>ПН-ПТ 10:00 – 21:00 СБ-ВС 10:00 – 17:00</p>
+                        <p><strong>Номер телефона:</strong> +7 (495) 227-79-45</p>
+                    </div>
+                    <div class="logo">
+                        <img src="../../../images/header/logoDemo.png" alt="">
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A317bc1555dc33e4117d8aaad75c5d68fb9e4fd5e2ade691a33c290a944813f7e&amp;source=constructor" width="900" height="420" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div>
             <div class="sub_footer">
@@ -140,5 +200,6 @@
         </div>
     </footer>
     <script type="module" src='service.js'></script>
+    <script  src='script.js'></script>
 </body>
 </html>

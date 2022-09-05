@@ -8,6 +8,7 @@ header {
 header .First {
     height: 80px;
     display: flex;
+    color: white;
     align-items: center;
 }
 
@@ -23,7 +24,7 @@ header .First a {
 }
 
 header .First a:hover {
-    color: #f18800;
+    color: #f18800 !important;
     border-bottom: #f18800 2px solid;
 }
 
@@ -89,7 +90,7 @@ header .order{
 .description{
     background: rgba(143, 134, 134, 0.2) !important;
 }
- .description > div{
+.description > div{
     max-width: 1720px;
     margin: 0 auto; 
     padding: 5px;
@@ -100,22 +101,21 @@ header .order{
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-   
 }
 
- .description img{
+.description img{
     height: 20px;
     width: 20px;
     margin-top: 8px;
     margin-right: 7px;
 }
- .description p{
+.description p{
     margin-top: 3px;
 }
- .description > div > div{
+.description > div > div{
     display: flex;
 }
- .order .phone{
+.order .phone{
     margin-right: 10px;
 }
 @media screen and (max-width: 1200px){
@@ -133,7 +133,7 @@ header .order{
     }
 }
 @media screen and (max-width: 800px){
-     .description  p:first-child{
+    .description  p:first-child{
         display: none;
     }
     header .Second img{
@@ -142,7 +142,7 @@ header .order{
 
 }
 @media screen and (max-width: 600px){
-     .description > div{
+    .description > div{
         flex-direction: column;
     }
     .AllHeader{
