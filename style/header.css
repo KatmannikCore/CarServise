@@ -1,0 +1,169 @@
+header {
+    font-family: "Montserrat", Sans-serif;
+    border-bottom: #f18800 2px solid;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header .First {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header .First a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 400;
+}
+
+header .First a:hover {
+    color: #f18800;
+    border-bottom: #f18800 2px solid;
+}
+
+header .Second {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 80px;
+    padding-right: 20px;
+}
+
+header  .button, .nav .button {
+    background-color: #f18800;
+    padding: 5px 0px;
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+    border-radius: 3px;
+    text-align: center;
+    width: 150px;
+    float: right;
+}
+header .phone{
+    height: 40px;
+    margin-top: 10px;
+}
+
+header .order{
+    display: flex;
+}
+
+.AllHeader {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+/*/////////////////
+///////start///////
+/////////////////*/
+
+.start {
+    height: 650px;
+    background-image: url("../images/body/sec.jpg");
+    background-size: 100% 100%;
+}
+
+.start h1 {
+    max-width: 80%;
+    margin: 0 auto;
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 80px;
+    position: relative;
+    top: 15%;
+    opacity: 1;
+    color: #f18800;
+}
+.description{
+    background: rgba(143, 134, 134, 0.2) !important;
+}
+ .description > div{
+    max-width: 1720px;
+    margin: 0 auto; 
+    padding: 5px;
+    color: white;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+   
+}
+
+ .description img{
+    height: 20px;
+    width: 20px;
+    margin-top: 8px;
+    margin-right: 7px;
+}
+ .description p{
+    margin-top: 3px;
+}
+ .description > div > div{
+    display: flex;
+}
+ .order .phone{
+    margin-right: 10px;
+}
+@media screen and (max-width: 1200px){
+    .AllHeader{
+        max-width: 100%;
+    }
+    header .Second img{
+        height: 50px;
+    }
+
+}
+@media screen and (max-width: 950px){
+    header .number{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+     .description  p:first-child{
+        display: none;
+    }
+    header .Second img{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 600px){
+     .description > div{
+        flex-direction: column;
+    }
+    .AllHeader{
+        display: none;
+    }
+    header{
+        border-bottom: 0px;
+    }
+    .nav-toggle{
+        background: none !important;
+    }
+    .start{
+        background-image: url("../images/back_mobail.jpg") !important;
+    }
+    .start h1{
+        font-size: 25px;
+        display: block;
+        top: 200px;
+        color: #FDF4E3;
+        font-weight: 500;
+        line-height: 60px;
+    }
+}
+

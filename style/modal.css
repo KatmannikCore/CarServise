@@ -1,0 +1,149 @@
+.modal_wrapper{
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.modal{
+    color: white;
+    max-width: 1920px;
+    width: 50%;
+    font-weight: 400;
+    background-color: red;
+    border-radius: 20px ;
+    background: #242424;
+    border: 2px black solid;
+}
+.modal .map{
+    height: 400px;
+    margin: 0 10px 5px 10px;
+}
+.modal .map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px ;
+}
+.modal .sub_modal{
+    font-weight: 400;
+}
+.modal .name{
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 35px;
+}
+.modal .breed{
+    font-weight: 400;
+    padding-bottom: 40px;
+    font-style: 20px;
+}
+.modal .description{
+    font-weight: 400;
+    font-style: 15px;
+    padding-bottom: 40px;
+}
+.modal .close{
+    position: relative;
+    float: right;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center 
+}
+.modal .close:hover{
+    color: #f18800;
+}
+.modal p span{
+    font-weight: 900;
+}
+.modal p{
+    font-weight: 400;
+    font-style: 15px;
+}
+.modal .data p::before{
+    content: ' ';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #F1CDB3;
+}
+
+.modal .data li::marker {
+    color: #F1CDB3;
+}
+.modal .data ul{
+    margin: 0;
+    padding-left: 15px;
+}
+.modal_two{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal_two img{
+    height: 80px;
+    width: 200px;
+}
+.bacround{
+    background: rgb(53, 53, 53);
+    background-size: 100% 100%;
+    opacity: 0.6;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+body{
+    position: relative;
+}
+@media screen and (max-width: 1110px){
+
+    .modal{
+        width: 630px; 
+        left: 5%;
+    }
+}
+    
+@media screen and (max-width: 600px){
+    .modal{
+        margin: 15px;
+    }
+    .modal_wrapper{
+        top: 3%;
+    }
+}
+@media screen and (max-width: 425px){
+    .modal p{
+        font-size: 12px;
+    }
+    .modal h3{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 320px){
+    .modal img {
+        display: none;
+    }
+    .modal{
+        width: 240px;
+    }
+    .modal .map iframe{
+        height: 200px;
+    }
+    .modal .map{
+        height: 100%    ;
+    }
+    .modal .name{
+        font-size: 35px;
+        text-align: center;
+    }
+}

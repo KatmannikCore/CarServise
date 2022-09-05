@@ -1,0 +1,32 @@
+.slider .slick-list {
+    overflow: hidden;
+}
+
+.slider .slick-track {
+    display: flex;
+    height: 250px;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    opacity: 0;
+}
+
+.slider {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.slider .slick-slide {
+    padding: 50px;
+}
+
+.sliderHead {
+    background-color: #151515;
+}
+
+@media screen and (max-width: 1200px){
+    .slider{
+        max-width: 100%;
+    }
+}

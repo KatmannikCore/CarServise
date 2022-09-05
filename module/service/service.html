@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="style/discription-service.css">
+    <link rel="stylesheet" href="style/table-service.css">
+    <link rel="stylesheet" href="style/reasons.css">
+    <link rel="stylesheet" href="style/sub_header.css">
+    <link rel="stylesheet" href="../../style/menu.css">
+    <link rel="stylesheet" href="../../style/footer.css">
+    <title>Автосервис СТО АВТО</title>
+</head>
+<body>
+    <div class="description">
+        <div>
+            <p> Ремонт и обслуживание автомобилей</p>
+            <div class="place">
+                <img src="../../images/header/mark.png" alt="" class="Mark">
+                <p>Москва, ул. Нагорная, д.3 стр.10</p>
+            </div>
+            <div class="time">
+                <img src="../../images/header/clock.png" alt="" class="clock">
+                <p>ПН-ПТ 10:00 – 21:00 СБ-ВС 10:00 – 17:00</p>
+            </div>
+        </div>
+    </div>
+    <header>
+        <input type="checkbox" id="nav-toggle" hidden>
+                    <nav class="nav">
+                        <div class="logo">
+                            <img src='/images/header/logoDemo.png' alt=''>
+                        </div>
+                        <ul>
+                            <li><p><a>Меню</a></p>
+                            <li><p><a href="../../index.htm">Главная</a></p>
+                            <li><p><a href="">О тех-центре</a></p>
+                            <li><p><a href="">Услуги</a></p>
+                            <li><p><a href="">Корпоративным клиентам</a></p>
+                            <li><p><a href="">Гарантия</a></p>
+                            <li><p><a href="">Контакты</a></p>
+                            <li>
+                                <div class="button_wrapper">
+                                    <div class='button'>Записаться</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class='AllHeader menu'>
+                        <img class="logo" src='/images/header/logoDemo.png' alt=''>
+                        <nav class='First'>
+                            <a href="../../index.htm">Главная</a>
+                            <a href=''>О тех-центре</a\>
+                            <a href=''>Услуги</a>
+                            <a href=''>Корпоративным клиентам</a>
+                            <a href=''>Гарантия</a>
+                            <a href=''>Контакты</a>
+                        </nav>
+                        <div class="order">
+                            <img class="phone" src="/images/header/phone.png" alt="">
+                            <div>
+                                <nav class="number" style='color: aliceblue;'> +7 (495) 227-79-45</nav>
+                                <div class='button'>Записаться</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    </header>
+    <label for="nav-toggle" class="nav-toggle" onclick></label>
+    <div class="sub_header">
+        <div class="description">
+            <p class="name_service"></p>
+            <p>Автосервис «СтоАвто» <br> по обслуживанию и <br> ремонту автомобилей <br> в Москве</p>
+        </div>
+        <div class="order">
+            <p>Заполните форму и мы с вами свяжемся </p>
+            
+            <form action="../../mail.php" method="POST">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="">Имя, отчество</span>
+                    </div>
+                    <input type="text" name="user_name" class="form-control">
+                    <input type="text" name="user_last-name" class="form-control">
+                </div> 
+                <hr style="opacity: 0;">
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Ваш автомобиль</span>
+                    </div>
+                    <input type="text" name="auto" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" name="phone" id="inputGroup-sizing-sm">Номер телефона</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <button type="submit"  class="btn btn-warning">Записаться</button>
+            </form>
+            
+        </div>
+    </div>
+    <section class="table-servise">
+        <div class="container">
+            <table>
+                <tbody>
+                    <tr>
+                        <th><h1>НАЗВАНИЕ РАБОТЫ</h1></th>
+                        <th><h1>ЦЕНА</h1></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div class="sub_footer">
+                <div>
+                    <p>Ремонт, обслуживание и дооснащение <br> в ТЕХЦЕНТРЕ СТО АВТО</p>
+                </div>
+                <div class="logo">
+                    <img src="../../images/footer/logoDemo.png" alt="">
+                </div>
+                <div>
+                    <p>Остались вопросы? Задай их специалисту!</p>
+                    <div class="button_cont">
+                        <button>Заказать обратный званок</button>
+                    </div>
+                </div>
+            </div>
+            <div class="deep_footer">
+                <p>2001-2022 ООО «СТОАВТО», г. Москва. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src='service.js'></script>
+</body>
+</html>
