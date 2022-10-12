@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/menu.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/modal.css  ">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="about_center.css">
+    <title>Автосервис СТО АВТО</title>
+</head>
+<body>
+    <div class="description">
+        <div>
+            <p> Ремонт и обслуживание автомобилей</p>
+            <div class="place">
+                <img src="../../images/header/mark.png" alt="" class="Mark">
+                <p>Москва, ул. Нагорная, д.3 стр.10</p>
+            </div>
+            <div class="time">
+                <img src="../../images/header/clock.png" alt="" class="clock">
+                <p>ПН-ПТ 10:00 – 21:00 СБ-ВС 10:00 – 17:00</p>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="toggle_menu">&#9776;</div>  
+        <nav class="nav_menu nav">
+            <div class="logo">
+                <img src='/images/header/logoDemo.png' alt=''>
+            </div>
+            <ul>
+                <li><p><a>Меню</a></p>
+                <li><p><a href="../../index.htm">Главная</a></p>
+                <li><p><a href="../about_center/about_center.htm">О тех-центре</a></p>
+                <li><p><a>Услуги</a></p>
+                <li><p><a>Корпоративным клиентам</a></p>
+                <li><p><a>Гарантия</a></p>
+                <li><p><a  onclick="openModalContacts()" >Контакты</a></p>
+                <li>
+                    <div class="button_wrapper">
+                        <div class='button'>Записаться</div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class='AllHeader menu'>
+            <img class="logo" src='/images/header/logoDemo.png' alt=''>
+            <nav class='First'>
+                <a href="../../index.htm">Главная</a>
+                <a>О тех-центре</a\>
+                <a>Услуги</a>
+                <a>Корпоративным клиентам</a>
+                <a>Гарантия</a>
+                <a  onclick="openModalContacts()">Контакты</a>
+            </nav>
+            <div class="order">
+                <img class="phone" src="/images/header/phone.png" alt="">
+                <div>
+                    <nav class="number" style='color: aliceblue;'> +7 (495) 227-79-45</nav>
+                    <div class='button'>Записаться</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bacround" hidden ></div>
+    <div class="modal_wrapper" hidden>
+        <div hidden class="modal_window">
+            <div class="close">x</div>
+            <div class="sub_modal">
+                <div class="modal_two">
+                    <div class="text">
+                        <h3>Москва, ул. Нагорная, д.3 стр.10</h3>
+                        <p>ПН-ПТ 10:00 – 21:00 СБ-ВС 10:00 – 17:00</p>
+                        <p><strong>Номер телефона:</strong> +7 (495) 227-79-45</p>
+                    </div>
+                    <div class="logo">
+                        <img src="../../../images/header/logoDemo.png" alt="">
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A317bc1555dc33e4117d8aaad75c5d68fb9e4fd5e2ade691a33c290a944813f7e&amp;source=constructor" width="900" height="420" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" about_sub">
+    </div>
+    <benefits>
+        <h1>9 преимуществ нашего авто тех-центра</h1>
+        <div class="benefits_wrapper">
+            <div class="benefits_content">  
+                <div class="benefit_item">
+                    <div class="benefit_img">
+                        <div class="benefit_img_wrapper">
+                            <div class="ztl-icon" style="background-color:#f2f2f2;"></div>
+                            <div class="benefit_img_content">
+                                <div class="benefit_img_content_wrapper"><img src="images/1.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="benefit_name">Низкие цены</p>
+                    <p class="benefit_text">В нашем тех центре вы всегда можете быть уверены, что ваш автомобиль ремонтируется по адекватному прайсу по структурированным нормо-часам в зависимости от автомобиля. Мы не включаем сопутствующие расходники в наряд-заказ, не заманиваем клиентов заведомо ложной стоимостью работ. </p>
+                </div>
+                <div class="benefit_item">
+                    <div class="benefit_item">
+                        <div class="benefit_img">
+                            <div class="benefit_img_wrapper">
+                                <div class="ztl-icon" style="background-color:#f2f2f2;"></div>
+                                <div class="benefit_img_content">
+                                    <div class="benefit_img_content_wrapper"><img src="images/2.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="benefit_name">Сертифицированный автосервис</p>
+                    <p class="benefit_text">Наш тех центр ежегодно проходит сертификацию, в том числе по ГОСТ Р 51709-2001. Так же мы являемся сертифицированным сервисом BOSH. Мы используем только оригинальные каталоги и программное обеспечение, для наилучшего качества ремонта любых автомобилей.</p>
+                </div>
+                <div class="benefit_item">
+                    <div class="benefit_item">
+                        <div class="benefit_img">
+                            <div class="benefit_img_wrapper">
+                                <div class="ztl-icon" style="background-color:#f2f2f2;"></div>
+                                <div class="benefit_img_content">
+                                    <div class="benefit_img_content_wrapper"><img src="images/3.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="benefit_name">Опытный персонал</p>
+                    <p class="benefit_text">Мы очень внимательно подходим к подбору персонала и можем гарантировать, что ваш автомобиль будет ремонтироваться только опытными специалистами, которые регулярно проходят переподготовку и курсы для повышения квалификации.</p>
+                </div>
+                <div class="benefit_item">
+                    <div class="benefit_item">
+                        <div class="benefit_img">
+                            <div class="benefit_img_wrapper">
+                                <div class="ztl-icon" style="background-color:#f2f2f2;"></div>
+                                <div class="benefit_img_content">
+                                    <div class="benefit_img_content_wrapper"><img src="images/4.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="benefit_name">Гарантия на работу</p>
+                    <p class="benefit_text">Наши сотрудники используют метод двойного контроля, что позволяет нам с уверенностью давать гарантию на любые виды работ сроком от полугода до 2-х лет. Обратившись к нам, вы можете быть уверены, что вам не откажут в гарантии по надуманной причине, любую проблему мы всегда стараемся решить в пользу клиента.</p>
+                </div>
+                <div class="benefit_item">
+                    <div class="benefit_item">
+                        <div class="benefit_img">
+                            <div class="benefit_img_wrapper">
+                                <div class="ztl-icon" style="background-color:#f2f2f2;"></div>
+                                <div class="benefit_img_content">
+                                    <div class="benefit_img_content_wrapper"><img src="images/5.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="benefit_name">Современное оборудование</p>
+                    <p class="benefit_text">Мы работаем только на современном оборудование, регулярно докупаем и обновляем наш “парк”. Специализированное оборудование позволяет нам быстро и качественно выполнять любые виды даже самых сложных работ по авто.</p>
+                </div>
+                <div class="benefit_item">
+                    <div class="benefit_item">
+                        <div class="benefit_img">
+                            <div class="benefit_img_wrapper">
+                                <div class="ztl-icon" style="background-color:#f2f2f2;"></div>
+                                <div class="benefit_img_content">
+                                    <div class="benefit_img_content_wrapper"><img src="images/6.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="benefit_name">Подбор запчастей</p>
+                    <p class="benefit_text">Подбирая вам запчасти, наши сотрудники помогут выбрать, посоветуют оригинальные запчасти или хорошие аналоги. Подскажут где можно сэкономить, а где лучше поставить только оригинал. Заказывая запчасти у нас, вы можете быть уверены в их качестве т.к. мы работаем только с проверенными годами поставщиками.</p>
+                </div>
+                <div class="benefit_item">
+                    <div class="benefit_item">
+                        <div class="benefit_img">
+                            <div class="benefit_img_wrapper">
+                                <div class="ztl-icon" style="background-color:#f2f2f2;"></div>
+                                <div class="benefit_img_content">
+                                    <div class="benefit_img_content_wrapper"><img src="images/7.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="benefit_name">Оперативное выполнение работ</p>
+                    <p class="benefit_text">Любые работы мы стремимся выполнить в максимально сжаты сроки, но не в ущерб качеству. За счет оптимизации работы и оперативной доставке запчастей, вы всегда сможете понять сроки выполнения ремонтных работ по вашему авто.</p>
+                </div>
+                <div class="benefit_item">
+                    <div class="benefit_item">
+                        <div class="benefit_img">
+                            <div class="benefit_img_wrapper">
+                                <div class="ztl-icon" style="background-color:#f2f2f2;"></div>
+                                <div class="benefit_img_content">
+                                    <div class="benefit_img_content_wrapper"><img src="images/8.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="benefit_name">Свой склад запчастей</p>
+                    <p class="benefit_text">У нас большой склад запасных частей, который регулярно обновляется и пополняется. Это позволяет нам снизить цену для клиентов и ускорить процесс ремонта вашего автомобиля.</p>
+                </div>
+                <div class="benefit_item">
+                    <div class="benefit_item">
+                        <div class="benefit_img">
+                            <div class="benefit_img_wrapper">
+                                <div class="ztl-icon" style="background-color:#f2f2f2;"></div>
+                                <div class="benefit_img_content">
+                                    <div class="benefit_img_content_wrapper"><img src="images/9.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="benefit_name">Зона комфорта для клиентов</p>
+                    <p class="benefit_text">Чтобы время ожидания ремонта вашего автомобиля прошло для вас быстро и приятно, у нас оборудована клиентская комната с чаем и кофе, большим телевизором, игровой приставкой и бесплатным Wi-Fi/ </p>
+                </div>
+            </div>
+        </div>        
+    </benefits>  
+    <footer>
+        <div>
+            <div class="sub_footer">
+                <div>
+                    <p>Ремонт, обслуживание и дооснащение <br> в ТЕХЦЕНТРЕ СТО АВТО</p>
+                </div>
+                <div class="logo">
+                    <img src="../../images/footer/logoDemo.png" alt="">
+                </div>
+                <div>
+                    <p>Остались вопросы? Задай их специалисту!</p>
+                    <div class="button_cont">
+                        <button>Заказать обратный званок</button>
+                    </div>
+                </div>
+            </div>
+            <div class="deep_footer">
+                <p>2001-2022 ООО «СТОАВТО», г. Москва. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script  type="module"  src='about_center.js'></script>
+</body>
+</html>

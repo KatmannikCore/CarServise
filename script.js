@@ -17,10 +17,7 @@ $(document).ready(function() {
         autoplay: true,
     });
 })
-document.querySelectorAll(".col").forEach(element => element.addEventListener('click', function(e){
-    localStorage.setItem('service_index', e.currentTarget.querySelector('p.service_index').textContent);
-    document.location.href="/module/service/service.html";
-}) );
+
 function openModalContacts(){
     document.querySelector('.modal').hidden = false;
     document.querySelector('.bacround').hidden = false;
@@ -36,3 +33,7 @@ document.querySelector('.toggle_menu').addEventListener('click', ()=>{
     document.querySelector('.nav').classList.toggle('open_menu')
     document.querySelectorAll('.nav > ul > li ').forEach(item => item.classList.toggle('open_li'))
 })
+document.querySelectorAll(".col").forEach(element => element.addEventListener('click', function(e){
+    localStorage.setItem('service_index', e.currentTarget.querySelector('p.service_index').textContent);
+    document.location.href="/module/service/service.html";
+}) );

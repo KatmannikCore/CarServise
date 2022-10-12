@@ -1,0 +1,116 @@
+.about_sub{
+    height: 650px;
+    background-image: url(../../images/body/sec.jpg);
+    background-size: 100% 100%;
+}
+.benefits_content p{
+    color: white;
+}
+.benefits_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.benefits_wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+.benefits_content  .benefit_item{
+    flex: 0 1 33%;
+}
+.benefit_img{
+    display: flex;
+    justify-content: center;
+}
+.ztl-icon{
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 86px;
+    height: 110px;
+    border-radius: 26%;
+    text-align: center;
+    font-size: 56px;
+    line-height: 110px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+    margin: 0 18px;
+}
+.ztl-icon:before,.ztl-icon:after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    top: 0px;
+    left: 0px;
+    content: '';
+}
+.ztl-icon:before {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+.ztl-icon:after {
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+.benefit_img_content {
+    width: 124px;
+    height: 110px;
+    position: absolute;
+    z-index: 2332;
+    top: 0px;
+    flex: 0 0 auto;
+    text-align: center;
+    line-height: 110px;
+    overflow: hidden;
+}
+.benefit_img{
+    position: relative;
+}
+.benefit_img_content_wrapper img{
+    max-width: 60%;
+    margin-top: 20px; 
+}
+.benefit_img_content_wrapper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.benefit_name{
+    padding: 12px 0;
+    text-align: center;
+    font-weight: 900;
+    font-size: 22px;
+}
+.benefit_text{
+    text-align: center;
+}
+.benefit_item{
+    margin-top: 10px;
+}
+benefits h1{
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+}
+footer{
+    margin-top: 40px;
+}
+@media screen and (max-width: 1000px){
+    .benefits_wrapper{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 800px){
+    .benefits_content  .benefit_item{
+        flex: 0 1 50%;
+    }
+}
+@media screen and (max-width: 550px){
+    .benefits_content  .benefit_item{
+        flex: 0 1 100%;
+    }
+}
