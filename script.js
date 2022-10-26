@@ -34,6 +34,14 @@ document.querySelector('.toggle_menu').addEventListener('click', ()=>{
     document.querySelectorAll('.nav > ul > li ').forEach(item => item.classList.toggle('open_li'))
 })
 document.querySelectorAll(".col").forEach(element => element.addEventListener('click', function(e){
-    localStorage.setItem('service_index', e.currentTarget.querySelector('p.service_index').textContent);
-    document.location.href="/module/service/service.html";
+   
+    if(e.currentTarget.querySelector('p.service_index').textContent ==1){
+        document.location.href="/module/service/fitting/fitting.htm";
+    }else{
+        localStorage.setItem('service_index', e.currentTarget.querySelector('p.service_index').textContent);
+        document.location.href="/module/service/service.html";
+    }
+   
+
+
 }) );

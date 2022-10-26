@@ -1,0 +1,16 @@
+.container td{
+    padding: 20px;
+}
+.radius{
+    color: #FB667A !important;
+}
+.sub_head{
+    color: rgb(199, 199, 199) !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+.test td{
+    padding: 25px !important;
+    margin: 2px !important;
+
+}

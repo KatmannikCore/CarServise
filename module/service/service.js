@@ -40,10 +40,12 @@ let table = document.querySelector('tbody');
 CreateTable().forEach(item => {table.append(item)})
 
 document.querySelectorAll(".switch_services a").forEach(element => element.addEventListener('click', function(e){
-    localStorage.setItem('service_index', e.currentTarget.id);
-    console.log(e.currentTarget.id)
-    console.log(localStorage)
-    document.location.href="/module/service/service.html";
+    if (e.currentTarget.id == 1){
+        document.location.href="/module/service/fitting/fitting.htm";
+    }else{
+        localStorage.setItem('service_index', e.currentTarget.id);
+        document.location.href="/module/service/service.html";
+    }
 }) );
 
 window.addEventListener('scroll', function() {

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../style/header.css">
+    <link rel="stylesheet" href="../style/discription-service.css">
+    <link rel="stylesheet" href="../style/table-service.css">
+    <link rel="stylesheet" href="../style/reasons.css">
+    <link rel="stylesheet" href="../style/sub_header.css">
+    <link rel="stylesheet" href="../../../style/menu.css">
+    <link rel="stylesheet" href="../../../style/footer.css">
+    <link rel="stylesheet" href="../../../style/modal.css  ">
+    <link rel="stylesheet" href="../style/switch-services.css">
+    <link rel="stylesheet" href="fitting.css">
+    <title>Автосервис СТО АВТО</title>
+</head>
+<body>
+    <div class="description">
+        <div>
+            <p> Ремонт и обслуживание автомобилей</p>
+            <div class="place">
+                <img src="../../../images/header/mark.png" alt="" class="Mark">
+                <p>Москва, ул. Нагорная, д.3 стр.10</p>
+            </div>
+            <div class="time">
+                <img src="../../../images/header/clock.png" alt="" class="clock">
+                <p>ПН-ПТ 10:00 – 21:00 СБ-ВС 10:00 – 17:00</p>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="toggle_menu">&#9776;</div>  
+        <nav class="nav_menu">
+            <div class="logo">
+                <img src='images/header/logoDemo.png' alt=''>
+            </div>
+            <ul>
+                <li><p><a>Меню</a></p>
+                <li><p><a href="../../index.htm">Главная</a></p>
+                <li><p><a href="../about_center/about_center.htm">О тех-центре</a></p>
+                <li><p><a>Услуги</a></p>
+                <li><p><a>Корпоративным клиентам</a></p>
+                <li><p><a>Гарантия</a></p>
+                <li><p><a href="" onclick="openModalContacts()" >Контакты</a></p>
+                <li>
+                    <div class="button_wrapper">
+                        <div class='button'>Записаться</div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class='AllHeader menu'>
+            <img class="logo" src='/images/header/logoDemo.png' alt=''>
+            <nav class='First'>
+                <a href="../../index.htm">Главная</a>
+                <a>О тех-центре</a\>
+                <a>Услуги</a>
+                <a>Корпоративным клиентам</a>
+                <a>Гарантия</a>
+                <a href="" onclick="openModalContacts()">Контакты</a>
+            </nav>
+            <div class="order">
+                <img class="phone" src="/images/header/phone.png" alt="">
+                <div>
+                    <nav class="number" style='color: aliceblue;'> +7 (495) 227-79-45</nav>
+                    <div class='button'>Записаться</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="switch_services">
+        <div class="switch_services_wrapper">
+            <div>
+                <p><a id="0">Техническое обслуживание</a></p>
+            </div>
+            <div>
+                <p><a id="1">Шиномонтаж</a></p>
+            </div>
+            <div>
+                <p><a id="2">3D Cход-развал</a></p>
+            </div>
+            <div>
+                <p><a id="3">Диагностика</a></p>
+            </div>
+            <div>
+                <p><a id="4">Ремонт</a></p>
+            </div>
+            <div>
+                <p><a id="5">Автоэлектрика</a></p>
+            </div>
+            <div>
+                <p><a id="6">Автокондиционер</a></p>
+            </div>
+            <div>
+                <p><a id="7">Шумоизоляция</a></p>
+            </div>
+            <div>
+                <p><a id="8">Автозвук</a></p>
+            </div>
+            <div>
+            <p><a id="9">Дооснощение</a></p>
+        </div>
+    </div>
+    <div class="show_services">
+        <div>\/</div>
+    </div>
+    </div>
+    <div class="sub_header">
+        <div class="info">
+            <p class="name_service">Шиномонтаж</p>
+            <p>Автосервис «СтоАвто» <br> по обслуживанию и <br> ремонту автомобилей <br> в Москве</p>
+        </div>
+        <div class="order">
+            <p>Заполните форму и мы с вами свяжемся </p>
+            
+            <form action="../../mail.php" method="POST">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="">Имя, отчество</span>
+                    </div>
+                    <input type="text" name="user_name" class="form-control">
+                    <input type="text" name="user_last-name" class="form-control">
+                </div> 
+                <hr style="opacity: 0;">
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Ваш автомобиль</span>
+                    </div>
+                    <input type="text" name="auto" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" name="phone" id="inputGroup-sizing-sm">Номер телефона</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <button type="submit"  class="btn btn-warning">Записаться</button>
+            </form>
+            
+        </div>
+    </div>
+    <section class="table-servise">
+        <div class="container">
+            <table>
+                <tbody>
+                    <tr>
+                        <th><h1>Радиус</h1></th>
+                        <th><h1>14</h1></th>
+                        <th><h1>15</h1></th>
+                        <th><h1>16</h1></th>
+                        <th><h1>17</h1></th>
+                        <th><h1>18</h1></th>
+                        <th><h1>19</h1></th>
+                        <th><h1>20</h1></th>
+                        <th><h1>21</h1></th>
+                        <th><h1>22</h1></th>
+                    </tr>
+                    <tr>
+                        <td><p>Легковые</p></td>
+                        <td><p>2000</p></td>
+                        <td><p>2200</p></td>
+                        <td><p>2500</p></td>
+                        <td><p>2800</p></td>
+                        <td><p>3000</p></td>
+                        <td><p>4000</p></td>
+                        <td><p>4500</p></td>
+                        <td><p>5000</p></td>
+                        <td><p>5500</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Низ. прф</p></td>
+                        <td><p>2200</p></td>
+                        <td><p>2500</p></td>
+                        <td><p>2800</p></td>
+                        <td><p>3100</p></td>
+                        <td><p>3500</p></td>
+                        <td><p>4600</p></td>
+                        <td><p>5200</p></td>
+                        <td><p>5500</p></td>
+                        <td><p>6000</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Кроссов</p></td>
+                        <td><p>2100</p></td>
+                        <td><p>2400</p></td>
+                        <td><p>2700</p></td>
+                        <td><p>3000</p></td>
+                        <td><p>3300</p></td>
+                        <td><p>4400</p></td>
+                        <td><p>5000</p></td>
+                        <td><p>5800</p></td>
+                        <td><p>6200</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Низ. прф</p></td>
+                        <td><p>2300</p></td>
+                        <td><p>2700</p></td>
+                        <td><p>3000</p></td>
+                        <td><p>3300</p></td>
+                        <td><p>3800</p></td>
+                        <td><p>5000</p></td>
+                        <td><p>5700</p></td>
+                        <td><p>6300</p></td>
+                        <td><p>6800</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Джипы</p></td>
+                        <td><p>2300</p></td>
+                        <td><p>2600</p></td>
+                        <td><p>3000</p></td>
+                        <td><p>3600</p></td>
+                        <td><p>4200</p></td>
+                        <td><p>4700</p></td>
+                        <td><p>5500</p></td>
+                        <td><p>6000</p></td>
+                        <td><p>6500</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Низ. прф</p></td>
+                        <td><p>2400</p></td>
+                        <td><p>2900</p></td>
+                        <td><p>2300</p></td>
+                        <td><p>4000</p></td>
+                        <td><p>4600</p></td>
+                        <td><p>5200</p></td>
+                        <td><p>6000</p></td>
+                        <td><p>6500</p></td>
+                        <td><p>7000</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div class="container test">
+        <table>
+            <tbody>
+                <tr colspan="6">
+                    <td colspan="6">МОНТАЖ / ДЕМОНТАЖ</td>
+                </tr>
+                <tr>
+                    <td class="sub_head" colspan="2">Легковые автомобили</td>
+                    <td class="sub_head" colspan="2">Кроссоверы Минивэны </td>
+                    <td class="sub_head" colspan="2">Джип Внедорожник</td>
+                </tr>
+                <tr>
+                    <td class="radius">R14</td>
+                    <td>135 рублей</td>
+                    <td class="radius">R14 </td>
+                    <td>150 рублей</td>
+                    <td class="radius">R14 </td>
+                    <td>180 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R15</td>
+                    <td class="price">150  рублей</td>
+                    <td class="radius">R15 </td>
+                    <td class="price">180 рублей</td>
+                    <td class="radius">R15 </td>
+                    <td class="price">200 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R16</td>
+                    <td class="price">175 рублей</td>
+                    <td class="radius">R16 </td>
+                    <td class="price">200 рублей</td>
+                    <td class="radius">R16 </td>
+                    <td class="price">225 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R17</td>
+                    <td class="price">200  рублей</td>
+                    <td class="radius">R17 </td>
+                    <td class="price">225 рублей</td>
+                    <td class="radius">R17 </td>
+                    <td class="price">250 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R18</td>
+                    <td class="price">225  рублей</td>
+                    <td class="radius">R18 </td>
+                    <td class="price">275 рублей</td>
+                    <td class="radius">R18 </td>
+                    <td class="price">300 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R19</td>
+                    <td class="price">300 рублей</td>
+                    <td class="radius">R19 </td>
+                    <td class="price">375 рублей</td>
+                    <td class="radius">R19 </td>
+                    <td class="price">375 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R20</td>
+                    <td class="price">350 рублей</td>
+                    <td class="radius">R20 </td>
+                    <td class="price">450 рублей</td>
+                    <td class="radius">R20 </td>
+                    <td class="price">450 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R21</td>
+                    <td class="price">400 рублей</td>
+                    <td class="radius">R21 </td>
+                    <td class="price">485 рублей</td>
+                    <td class="radius">R21 </td>
+                    <td class="price">500 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R22</td>
+                    <td class="price">425 рублей</td>
+                    <td class="radius">R22 </td>
+                    <td class="price">500 рублей</td>
+                    <td class="radius">R22 </td>
+                    <td class="price">525 рублей</td>
+                </tr>
+                <tr colspan="6">
+                    <td colspan="6">НИЗКИЙ ПРОФИЛЬ (35 и ниже) + 150 рублей за колесо</td>
+                </tr>
+                <tr colspan="6">
+                    <td colspan="6">УСТАНОВКА КАМЕРЫ + 50 рублей за колесо</td>
+                </tr>
+                <tr colspan="6">
+                    <td colspan="6">БАЛАНСИРОВКА</td>
+                </tr>
+                <tr>
+                    <td class="sub_head" colspan="2">Легковые автомобили</td>
+                    <td class="sub_head" colspan="2">Кроссоверы Минивэны </td>
+                    <td class="sub_head" colspan="2">Джип Внедорожник</td>
+                </tr>
+                <tr>
+                    <td class="radius">R14</td>
+                    <td>135 рублей</td>
+                    <td class="radius">R14 </td>
+                    <td>150 рублей</td>
+                    <td class="radius">R14 </td>
+                    <td>180 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R15</td>
+                    <td class="price">150  рублей</td>
+                    <td class="radius">R15 </td>
+                    <td class="price">180 рублей</td>
+                    <td class="radius">R15 </td>
+                    <td class="price">200 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R16</td>
+                    <td class="price">175 рублей</td>
+                    <td class="radius">R16 </td>
+                    <td class="price">200 рублей</td>
+                    <td class="radius">R16 </td>
+                    <td class="price">225 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R17</td>
+                    <td class="price">200  рублей</td>
+                    <td class="radius">R17 </td>
+                    <td class="price">225 рублей</td>
+                    <td class="radius">R17 </td>
+                    <td class="price">250 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R18</td>
+                    <td class="price">225  рублей</td>
+                    <td class="radius">R18 </td>
+                    <td class="price">275 рублей</td>
+                    <td class="radius">R18 </td>
+                    <td class="price">300 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R19</td>
+                    <td class="price">300 рублей</td>
+                    <td class="radius">R19 </td>
+                    <td class="price">375 рублей</td>
+                    <td class="radius">R19 </td>
+                    <td class="price">375 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R20</td>
+                    <td class="price">350 рублей</td>
+                    <td class="radius">R20 </td>
+                    <td class="price">450 рублей</td>
+                    <td class="radius">R20 </td>
+                    <td class="price">450 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R21</td>
+                    <td class="price">400 рублей</td>
+                    <td class="radius">R21 </td>
+                    <td class="price">485 рублей</td>
+                    <td class="radius">R21 </td>
+                    <td class="price">500 рублей</td>
+                </tr>
+                <tr>
+                    <td class="radius">R22</td>
+                    <td class="price">425 рублей</td>
+                    <td class="radius">R22 </td>
+                    <td class="price">500 рублей</td>
+                    <td class="radius">R22 </td>
+                    <td class="price">525 рублей</td>
+                </tr>
+                <tr colspan="6">
+                    <td class="sub_head" colspan="6">МОНТАЖ / ДЕМОНТАЖ</td>
+                </tr>
+                <tr>
+                    <td colspan="3">ЛЕГКОВЫЕ АВТОМОБИЛИ</td>
+                    <td colspan="3">100 р</td>
+                </tr>
+                <tr>
+                    <td colspan="3">КРОССОВЕРЫ</td>
+                    <td colspan="3">100 р</td>
+                </tr>
+                <tr>
+                    <td colspan="3">ДЖИПЫ</td>
+                    <td colspan="3">150 р</td>
+                </tr>
+                <tr colspan="6">
+                    <td class="sub_head" colspan="6">РЕМОНТ И РАСХОДНЫЕ МАТЕРИАЛЫ</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Грузы для дисков</td>
+                    <td colspan="3">30 р</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Самоклеящаяся лента</td>
+                    <td colspan="3">50 р</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Вентиль б/к покрышки</td>
+                    <td colspan="3">50 р</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Промазка герметиком (1 колесо)</td>
+                    <td colspan="3">100 р</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Ремонт камеры</td>
+                    <td colspan="3">300 р</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Ремонт б/к покрышки</td>
+                    <td colspan="3">400 р</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Удаление секреток (1 штука)</td>
+                    <td colspan="3">1000 р</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="bacround" hidden ></div>
+    <div class="modal_wrapper" hidden>
+        <div class="modal_window">
+            <div class="close">x</div>
+            <div class="sub_modal">
+                <div class="modal_two">
+                    <div class="text">
+                        <h3>Москва, ул. Нагорная, д.3 стр.10</h3>
+                        <p>ПН-ПТ 10:00 – 21:00 СБ-ВС 10:00 – 17:00</p>
+                        <p><strong>Номер телефона:</strong> +7 (495) 227-79-45</p>
+                    </div>
+                    <div class="logo">
+                        <img src="../../../images/header/logoDemo.png" alt="">
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A317bc1555dc33e4117d8aaad75c5d68fb9e4fd5e2ade691a33c290a944813f7e&amp;source=constructor" width="900" height="420" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class="sub_footer">
+                <div>
+                    <p>Ремонт, обслуживание и дооснащение <br> в ТЕХЦЕНТРЕ СТО АВТО</p>
+                </div>
+                <div class="logo">
+                    <img src="../../../images/footer/logoDemo.png" alt="">
+                </div>
+                <div>
+                    <p>Остались вопросы? Задай их специалисту!</p>
+                    <div class="button_cont">
+                        <button>Заказать обратный званок</button>
+                    </div>
+                </div>
+            </div>
+            <div class="deep_footer">
+                <p>2001-2022 ООО «СТОАВТО», г. Москва. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src='fitting.js'></script>
+    <script  src='../script.js'></script>
+</body>
+</html>
