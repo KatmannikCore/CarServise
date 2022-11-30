@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.sub_header .order{
+.sub_header .order, .order_modal{
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     height:  500px;
@@ -29,13 +29,13 @@
     padding: 20px;
     transform: translate(-30%, 25%)
 }
-.sub_header .order input{
+.sub_header .order input, .order_modal input{
     background: rgb(26, 25, 25);
     color: white;
     border: 1px gray solid;
     margin: 2px;
 }
-.sub_header .order .input-group-text{
+.sub_header .order .input-group-text,.order_modal .input-group-text {
     background: black;
     color: white;
     border: 1px gray solid;

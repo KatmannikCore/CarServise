@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
@@ -45,7 +46,7 @@
                     <li><p><a>Услуги</a></p>
                     <li><p><a>Корпоративным клиентам</a></p>
                     <li><p><a>Гарантия</a></p>
-                    <li><p><a href="" onclick="openModalContacts()" >Контакты</a></p>
+                    <li><p><a onclick="openModalContacts()" >Контакты</a></p>
                     <li>
                         <div class="button_wrapper">
                             <div class='button'>Записаться</div>
@@ -61,13 +62,13 @@
                     <a>Услуги</a>
                     <a>Корпоративным клиентам</a>
                     <a>Гарантия</a>
-                    <a href="" onclick="openModalContacts()">Контакты</a>
+                    <a onclick="openModalContacts()">Контакты</a>
                 </nav>
                 <div class="order">
                     <img class="phone" src="/images/header/phone.png" alt="">
                     <div>
                         <nav class="number" style='color: aliceblue;'> +7 (495) 227-79-45</nav>
-                        <div class='button'>Записаться</div>
+                        <div onclick="openOrderContacts()" class='button'>Записаться</div>
                     </div>
                 </div>
             </div>
@@ -141,7 +142,6 @@
                 </div>
                 <button type="submit"  class="btn btn-warning">Записаться</button>
             </form>
-            
         </div>
     </div>
     <section class="table-servise">
@@ -198,6 +198,37 @@
             </div>
         </div>
     </footer>
+    <div class="order_wrapper" hidden>
+        <div class="order order_modal">
+            <p>Заполните форму и мы с вами свяжемся </p>
+            <div class="close">x</div>
+            <form action="../../mail.php" method="POST">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="">Имя, отчество</span>
+                    </div>
+                    <input type="text" name="user_name" class="form-control">
+                    <input type="text" name="user_last-name" class="form-control">
+                </div> 
+                <hr style="opacity: 0;">
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Ваш автомобиль</span>
+                    </div>
+                    <input type="text" name="auto" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" name="phone" id="inputGroup-sizing-sm">Номер телефона</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <button type="submit"  class="btn btn-warning">Записаться</button>
+            </form>
+        </div>
+    </div>
+    
+</div>
     <script type="module" src='service.js'></script>
     <script  src='script.js'></script>
 </body>
