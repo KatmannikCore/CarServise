@@ -16,7 +16,7 @@
     max-width: 80%;
 }
 
-.cols {
+.columns {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -27,7 +27,7 @@
     justify-content: center;
 }
 
-.col {
+.coll {
     width: calc(17% - 2rem);
     margin: 2rem;
     cursor: pointer;
@@ -172,19 +172,19 @@
     display: none;
 }
 @media screen and (max-width: 64rem) {
-    .col {
+    .coll {
         width: calc(33.333333% - 2rem);
     }
 }
 
 @media screen and (max-width: 48rem) {
-    .col {
+    .coll {
         width: calc(50% - 2rem);
     }
 }
 
 @media screen and (max-width: 32rem) {
-    .col {
+    .coll {
         width: 100%;
         margin:  2rem ;
     }

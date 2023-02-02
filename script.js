@@ -19,21 +19,25 @@ $(document).ready(function() {
 })
 
 function openModalContacts(){
-    document.querySelector('.modal').hidden = false;
+    document.querySelector('.modal_wrapper').hidden = false;
     document.querySelector('.bacround').hidden = false;
+
 }
+
 document.querySelector('.close').addEventListener('click', fiddenModal)
+document.querySelector('.order_wrapper .close').addEventListener('click', fiddenModal)  
 document.querySelector('.bacround').addEventListener('click', fiddenModal)
 function fiddenModal(){
-    document.querySelector('.modal').hidden = true;
+    document.querySelector('.modal_wrapper').hidden = true;
     document.querySelector('.bacround').hidden = true;
+    document.querySelector('.order_wrapper').hidden = true;
 }
 document.querySelectorAll('.nav a').forEach(item => item.addEventListener('click', () => document.querySelector('.nav').classList.toggle('open_menu')))
 document.querySelector('.toggle_menu').addEventListener('click', ()=>{
     document.querySelector('.nav').classList.toggle('open_menu')
     document.querySelectorAll('.nav > ul > li ').forEach(item => item.classList.toggle('open_li'))
 })
-document.querySelectorAll(".col").forEach(element => element.addEventListener('click', function(e){
+document.querySelectorAll(".coll").forEach(element => element.addEventListener('click', function(e){
    
     if(e.currentTarget.querySelector('p.service_index').textContent ==1){
         document.location.href="/module/service/fitting/fitting.htm";
@@ -41,7 +45,9 @@ document.querySelectorAll(".col").forEach(element => element.addEventListener('c
         localStorage.setItem('service_index', e.currentTarget.querySelector('p.service_index').textContent);
         document.location.href="/module/service/service.html";
     }
-   
-
-
 }) );
+function openOrderContacts(){
+    document.querySelector('.bacround').hidden = false;
+    document.querySelector('.order_wrapper').hidden = false;
+    
+}
